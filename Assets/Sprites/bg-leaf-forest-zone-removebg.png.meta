@@ -1,0 +1,2424 @@
+fileFormatVersion: 2
+guid: d8e89c770ca1cea4ca37a108b48a2590
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1618
+        width: 256
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21e80b7886ec9448a32e90a8783d71a
+      internalID: -656632871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1838
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9344506a5aef28f4babf1259510481ad
+      internalID: -1855779334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1815
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839d6a86ad9c9444a99bd3dabbf33157
+      internalID: -1754188485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1820
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d7896d28a0ce1479694b4e23653bea
+      internalID: 175489890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_4
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1820
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da524a78163eaf479658c286b66b88d
+      internalID: -644815640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_5
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1820
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515775e2732c9d74990b2fbdefe13279
+      internalID: -1896678923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1820
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5f061dc0aca84459bccc6705fb5dd1
+      internalID: -1830030854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_7
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1820
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6606854512254f149a4fc5cd1c038b13
+      internalID: -1668459229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1812
+        width: 98
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca17772e2e6dc2143a077d619475616c
+      internalID: -480741912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1507
+        width: 226
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1be6a4146da244ea7a95975b89a412
+      internalID: 123458503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1765
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec97550c3408b1499924630a7f0662a
+      internalID: 1068907552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1766
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdbc83eaada5b44797adedac275713b
+      internalID: -230388515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_12
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1780
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ef0749d91ed8b418e59ad9fc7344d3
+      internalID: 1653291879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1778
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba79d3a7334ad34b85e69e3336ecf7e
+      internalID: 638023985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_14
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1766
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1da3c6fee673eb4981b2f8579eab554
+      internalID: 376921389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_15
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1729
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9877db27482b5144a82265f2d6d6c9d0
+      internalID: 1578298406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_16
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1730
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acab5420945d8f4ab5835c08d6cb45c
+      internalID: 278381378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_17
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1721
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b3189e6797fa74b9b3313ab7c9cec3
+      internalID: 695058064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_18
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1722
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b116d14e7cd4a4a9040ecb01b72534
+      internalID: -157642788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_19
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1718
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe869d7512592445b493fc8fc4fe706
+      internalID: -1073206877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_20
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1743
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1c11ea01ca72d4e9ce0492646bb0f7
+      internalID: 1944139855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_21
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1718
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ec4500c86d8f8439b37d7e92096c31
+      internalID: 828934762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_22
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1718
+        width: 57
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb5ee32b3b7f6843817aedb147465fa
+      internalID: -1559860247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_23
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1718
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2282f48497c51ba458438452f305a3bb
+      internalID: -164954043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_24
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1566
+        width: 64
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d411edc5b48f34d8d09cd588bb0f60
+      internalID: -1840768847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_25
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1630
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3449df9a5df3647b01ecc7ddb1da08
+      internalID: 1593705971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_26
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1689
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c66be12ed966af4ca8c5f114a6f1fde
+      internalID: -460742232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_27
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1556
+        width: 24
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285ecedbe89a92e4985c5c9c52cfef20
+      internalID: -1693926004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1697
+        width: 50
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b0600219714d746a62c0fd00005e03
+      internalID: -105581747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_29
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1556
+        width: 10
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97be99fb53818444bd4c2113b2d8bb0
+      internalID: -567002816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_30
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1661
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff99ae2dec50eb04b85750f1ababe98a
+      internalID: 1074213840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_31
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1661
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08761568500b9c6449155354a20091af
+      internalID: 1311251579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_32
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1662
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bdbc6206b4dc64f9604582e145f516
+      internalID: -1357041623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_33
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1661
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ff662ac3c20d74797e549ea6421acd
+      internalID: -1166967319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_34
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1634
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0172948d5538ae4a95d82e7f9b9e911
+      internalID: -650200150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_35
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1566
+        width: 10
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22874bbff3fad2c40b79b56f24a6bed7
+      internalID: -469195265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_36
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1557
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6fd4e2d5d704d4eb8e6bccb0d9c32f
+      internalID: -1282108203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_37
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1557
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4460be15df96244e96eafbc4d29c8b7
+      internalID: -1578300079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_38
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1557
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e3ab49cb31c634a97c7ca7297c5078
+      internalID: 323989053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_39
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1557
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b630e30ddff969c4ab194a01653754ed
+      internalID: -1251504058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_40
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1529
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b633cdeeea431424ca6ceb2b48b6e903
+      internalID: -938740759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_41
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1480
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bc5afee277ac54483487ac86ec4403
+      internalID: 723480956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_42
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1488
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7f842d02241774c95beca047832ec6
+      internalID: 5809731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_43
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1492
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c4424497650a641a763bbc3a63da74
+      internalID: -2014287579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1333
+        width: 180
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fdd12b249b25548aefc85f65416a5e
+      internalID: -1382691887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_45
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1333
+        width: 180
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2455cc0660fe125439313c5f6681c7ab
+      internalID: 843475669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_46
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1333
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b932d2c46f4337449d7bcce41efada4
+      internalID: -899543983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_47
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1333
+        width: 52
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25630cac13353340bde07c107dedbca
+      internalID: -476006499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_48
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1333
+        width: 91
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e71849aca024ee44aaab47d830161a4
+      internalID: 595850293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_49
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1290
+        width: 144
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c9ab60511ae7240a6f2c2ddd8d82e8
+      internalID: -1120626253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_50
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1333
+        width: 108
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd88f0dfbde8b4840b74e5ec9d3191dd
+      internalID: -719395551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_51
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1134
+        width: 114
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01e52a234aec3f47956cdb4b3da32b5
+      internalID: 58215796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_52
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1134
+        width: 195
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31c781aa1aac0440b1a6cc41c4930fc
+      internalID: -809567155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_53
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1134
+        width: 194
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb741853b2b6c842b13293753d37d2f
+      internalID: -1762261277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_54
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1134
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b918fa6da8c8e134a930bf9e5e23b12e
+      internalID: 285531178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_55
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1134
+        width: 194
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3efb90fa142f614a94f36a09da8bcb3
+      internalID: 1147902630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_56
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 970
+        width: 180
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2953ff48856ed3246afc6d8b7fc759cc
+      internalID: 703233483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_57
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 970
+        width: 179
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ab6f9b2daa0514a8eeef17bc97ee4c
+      internalID: 925924179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_58
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 970
+        width: 197
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7050d338d1b583f44b27f54c98f71e15
+      internalID: 1240507131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_59
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 640
+        width: 410
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1610e6d9257fb4b88a8016af19d922
+      internalID: -930535851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_60
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 823
+        width: 18
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c96f62b55619ab48835eb557cf83f03
+      internalID: 1538335709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_61
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 823
+        width: 195
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef3938b60692c940a6316bad7563c6f
+      internalID: -672335490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_62
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 823
+        width: 18
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb0a2faea8e3534da7fa6c44fc89b6b
+      internalID: -825831805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_63
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 823
+        width: 162
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8992ce4876f335c44987678d7a4c5c71
+      internalID: -1381427524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_64
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 640
+        width: 438
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc25571ce44b8794cbcae24543aa7d96
+      internalID: -204546999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_65
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 512
+        width: 98
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70221fad585513a4d82f487290d6596d
+      internalID: 147197254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_66
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 501
+        width: 110
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993efb5fbdbecb841b238bd65b1163c7
+      internalID: -316597122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 499
+        width: 34
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f42d3bec3376f445925e581e5b1a6af
+      internalID: -1563655150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_68
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 322
+        width: 194
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc9d4a75c530ce47b6bde870f3bcf32
+      internalID: 2124295818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_69
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 376
+        width: 97
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b6c7db1afd21640904081471a2cd84
+      internalID: 2036847242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_70
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 331
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794e002920a2558478756830dc88d8de
+      internalID: -451258585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_71
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 386
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46050305035d4b546b4d8ad7b452c94e
+      internalID: 905243057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_72
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 331
+        width: 98
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f868da02caef38a44aebde8f8eba6af2
+      internalID: -494365773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_73
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 276
+        width: 114
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0325ecd1de78e1479c1bc784669bd6c
+      internalID: 546055108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_74
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 276
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffea4fe6bc87ba42a9bcf330a25bf07
+      internalID: -349107293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_75
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 276
+        width: 84
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa86556964b0de4db91502655a42f14
+      internalID: 1065081985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_76
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 275
+        width: 99
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b425a5a7af3d549a8db84ad6d48065
+      internalID: 526626284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_77
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 5
+        width: 194
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64084a0eab579c48b0afe56c6fb7671
+      internalID: -849083514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_78
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 5
+        width: 194
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21ba46fad76f6d49a2a137410d91e76
+      internalID: 973265916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_79
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 970
+        width: 179
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be259d7875f7094598a7dffb4ee5758
+      internalID: -1542972489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_80
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 970
+        width: 127
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f56d504c1c0a14d967183a411555d0
+      internalID: 1622646513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_81
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1413
+        width: 259
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2744859859eb945a5760f4dba68031
+      internalID: -658792478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_82
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1770
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a58680954f0f6a4e9fe9840f673ff74
+      internalID: -1707399716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_83
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1423
+        width: 147
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d26b4dceeceb98488f80dc91ee1b17b
+      internalID: -1095164076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_84
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1539
+        width: 147
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5871b6bfd95e7224b8ab2ca5d5861e55
+      internalID: -155833946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_85
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1566
+        width: 31
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60fc866ea0bd794a9696de3e9f6a33b
+      internalID: -1117822839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_86
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1534
+        width: 53
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660a93fa47fd5f04b8ec21a885b25ba1
+      internalID: 727371677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_87
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1514
+        width: 48
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fdb4d4b2415cb4099fcd174c2e60ee
+      internalID: -1571158834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_88
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1514
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62745e4165785ae41bbe00e84345cea6
+      internalID: -865996447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_89
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1480
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcfe8e04a02e2444a203485ad1e6c08
+      internalID: -1684859121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_90
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1480
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2980dd2e599848a45b16fe2eaae71003
+      internalID: 236082340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_91
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1480
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a41041bf4fbdae4282d7bb8029cf038
+      internalID: -1511450524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_92
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1480
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cee326e1e4698d4181b9c9898f345ba
+      internalID: 1620297700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_93
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 420
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0388bb7b380f7144a8899cf0b8cc8746
+      internalID: 589242034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_94
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 567
+        width: 97
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f3642f942a7304aac4b4ac702bb3a8
+      internalID: -122079429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_95
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 566
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d121d02b075060649bc1162c4991cdd6
+      internalID: 943734472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_96
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 419
+        width: 98
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5191daeb992d6b14aaa001ba68f58190
+      internalID: 1556822620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_97
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 378
+        width: 98
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436107c860372284683f4c219240036d
+      internalID: 845216421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_98
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1747
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511928cfb981be14fbaa94cd5035c05d
+      internalID: 1055417244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_99
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1719
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f20d4a9ce9a974d910029aedf269bf
+      internalID: -159834027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_100
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1556
+        width: 14
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1598e77ae31ee649b5b7cbdeb8d2472
+      internalID: 174738229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_101
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1729
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb4246a4fd7952489aa15a2c13fa7e8
+      internalID: 783847025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_102
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1618
+        width: 256
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4038a472bd3d17f44804fa77d163a4b2
+      internalID: -235453850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_103
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1774
+        width: 256
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69cb2f0d6087db4484506737d9e7d7b
+      internalID: 394310988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg-leaf-forest-zone-removebg_104
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1774
+        width: 256
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb8d0eff1b88954c90304bdd1c61d01
+      internalID: 1077774726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bg-leaf-forest-zone-removebg_0: -656632871
+      bg-leaf-forest-zone-removebg_1: -1855779334
+      bg-leaf-forest-zone-removebg_10: 1068907552
+      bg-leaf-forest-zone-removebg_100: 174738229
+      bg-leaf-forest-zone-removebg_101: 783847025
+      bg-leaf-forest-zone-removebg_102: -235453850
+      bg-leaf-forest-zone-removebg_103: 394310988
+      bg-leaf-forest-zone-removebg_104: 1077774726
+      bg-leaf-forest-zone-removebg_11: -230388515
+      bg-leaf-forest-zone-removebg_12: 1653291879
+      bg-leaf-forest-zone-removebg_13: 638023985
+      bg-leaf-forest-zone-removebg_14: 376921389
+      bg-leaf-forest-zone-removebg_15: 1578298406
+      bg-leaf-forest-zone-removebg_16: 278381378
+      bg-leaf-forest-zone-removebg_17: 695058064
+      bg-leaf-forest-zone-removebg_18: -157642788
+      bg-leaf-forest-zone-removebg_19: -1073206877
+      bg-leaf-forest-zone-removebg_2: -1754188485
+      bg-leaf-forest-zone-removebg_20: 1944139855
+      bg-leaf-forest-zone-removebg_21: 828934762
+      bg-leaf-forest-zone-removebg_22: -1559860247
+      bg-leaf-forest-zone-removebg_23: -164954043
+      bg-leaf-forest-zone-removebg_24: -1840768847
+      bg-leaf-forest-zone-removebg_25: 1593705971
+      bg-leaf-forest-zone-removebg_26: -460742232
+      bg-leaf-forest-zone-removebg_27: -1693926004
+      bg-leaf-forest-zone-removebg_28: -105581747
+      bg-leaf-forest-zone-removebg_29: -567002816
+      bg-leaf-forest-zone-removebg_3: 175489890
+      bg-leaf-forest-zone-removebg_30: 1074213840
+      bg-leaf-forest-zone-removebg_31: 1311251579
+      bg-leaf-forest-zone-removebg_32: -1357041623
+      bg-leaf-forest-zone-removebg_33: -1166967319
+      bg-leaf-forest-zone-removebg_34: -650200150
+      bg-leaf-forest-zone-removebg_35: -469195265
+      bg-leaf-forest-zone-removebg_36: -1282108203
+      bg-leaf-forest-zone-removebg_37: -1578300079
+      bg-leaf-forest-zone-removebg_38: 323989053
+      bg-leaf-forest-zone-removebg_39: -1251504058
+      bg-leaf-forest-zone-removebg_4: -644815640
+      bg-leaf-forest-zone-removebg_40: -938740759
+      bg-leaf-forest-zone-removebg_41: 723480956
+      bg-leaf-forest-zone-removebg_42: 5809731
+      bg-leaf-forest-zone-removebg_43: -2014287579
+      bg-leaf-forest-zone-removebg_44: -1382691887
+      bg-leaf-forest-zone-removebg_45: 843475669
+      bg-leaf-forest-zone-removebg_46: -899543983
+      bg-leaf-forest-zone-removebg_47: -476006499
+      bg-leaf-forest-zone-removebg_48: 595850293
+      bg-leaf-forest-zone-removebg_49: -1120626253
+      bg-leaf-forest-zone-removebg_5: -1896678923
+      bg-leaf-forest-zone-removebg_50: -719395551
+      bg-leaf-forest-zone-removebg_51: 58215796
+      bg-leaf-forest-zone-removebg_52: -809567155
+      bg-leaf-forest-zone-removebg_53: -1762261277
+      bg-leaf-forest-zone-removebg_54: 285531178
+      bg-leaf-forest-zone-removebg_55: 1147902630
+      bg-leaf-forest-zone-removebg_56: 703233483
+      bg-leaf-forest-zone-removebg_57: 925924179
+      bg-leaf-forest-zone-removebg_58: 1240507131
+      bg-leaf-forest-zone-removebg_59: -930535851
+      bg-leaf-forest-zone-removebg_6: -1830030854
+      bg-leaf-forest-zone-removebg_60: 1538335709
+      bg-leaf-forest-zone-removebg_61: -672335490
+      bg-leaf-forest-zone-removebg_62: -825831805
+      bg-leaf-forest-zone-removebg_63: -1381427524
+      bg-leaf-forest-zone-removebg_64: -204546999
+      bg-leaf-forest-zone-removebg_65: 147197254
+      bg-leaf-forest-zone-removebg_66: -316597122
+      bg-leaf-forest-zone-removebg_67: -1563655150
+      bg-leaf-forest-zone-removebg_68: 2124295818
+      bg-leaf-forest-zone-removebg_69: 2036847242
+      bg-leaf-forest-zone-removebg_7: -1668459229
+      bg-leaf-forest-zone-removebg_70: -451258585
+      bg-leaf-forest-zone-removebg_71: 905243057
+      bg-leaf-forest-zone-removebg_72: -494365773
+      bg-leaf-forest-zone-removebg_73: 546055108
+      bg-leaf-forest-zone-removebg_74: -349107293
+      bg-leaf-forest-zone-removebg_75: 1065081985
+      bg-leaf-forest-zone-removebg_76: 526626284
+      bg-leaf-forest-zone-removebg_77: -849083514
+      bg-leaf-forest-zone-removebg_78: 973265916
+      bg-leaf-forest-zone-removebg_79: -1542972489
+      bg-leaf-forest-zone-removebg_8: -480741912
+      bg-leaf-forest-zone-removebg_80: 1622646513
+      bg-leaf-forest-zone-removebg_81: -658792478
+      bg-leaf-forest-zone-removebg_82: -1707399716
+      bg-leaf-forest-zone-removebg_83: -1095164076
+      bg-leaf-forest-zone-removebg_84: -155833946
+      bg-leaf-forest-zone-removebg_85: -1117822839
+      bg-leaf-forest-zone-removebg_86: 727371677
+      bg-leaf-forest-zone-removebg_87: -1571158834
+      bg-leaf-forest-zone-removebg_88: -865996447
+      bg-leaf-forest-zone-removebg_89: -1684859121
+      bg-leaf-forest-zone-removebg_9: 123458503
+      bg-leaf-forest-zone-removebg_90: 236082340
+      bg-leaf-forest-zone-removebg_91: -1511450524
+      bg-leaf-forest-zone-removebg_92: 1620297700
+      bg-leaf-forest-zone-removebg_93: 589242034
+      bg-leaf-forest-zone-removebg_94: -122079429
+      bg-leaf-forest-zone-removebg_95: 943734472
+      bg-leaf-forest-zone-removebg_96: 1556822620
+      bg-leaf-forest-zone-removebg_97: 845216421
+      bg-leaf-forest-zone-removebg_98: 1055417244
+      bg-leaf-forest-zone-removebg_99: -159834027
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

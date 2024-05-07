@@ -1,0 +1,1500 @@
+fileFormatVersion: 2
+guid: dabe908c15eb01c45bab455f2390de6c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_0
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 128
+        width: 132
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5442be6263743bb43af0c694b3fd7367
+      internalID: 24428275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 646
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d26d48eed71c14eb1fe93380939867
+      internalID: 479126996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 646
+        width: 40
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d07970eba969f468d18fff4ecb1940
+      internalID: 1135794730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 646
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5421ff8adaaf24b958670a1522d876
+      internalID: 1297957397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 646
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c756bcb8aa93a46ab4757096275bae
+      internalID: -1203524690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 388
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7c85c9c8af57a418ee2bb4992c141d
+      internalID: 1430360159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 517
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb88ed2fcb6d2547a5f7dadc47e6ffa
+      internalID: -1419895247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_7
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 517
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e39d655c7e1c584a8353d043d004934
+      internalID: 298794535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 259
+        width: 129
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168dfb0ccb9f8a14c85f9248a8f9ab6d
+      internalID: 907955543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_9
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 388
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c805ee008919a4dab16ccf849ea03c
+      internalID: 1685304652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 260
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972d69e3a8598d7449b3e9b65784315e
+      internalID: -755116034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1302b5c2687f5794d8e225b6c0150b0e
+      internalID: -479604602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f2b68d5ceb5a1449734f8ba1bdb706
+      internalID: 1769131787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043f727a11756a240916055dd198bec2
+      internalID: -865679820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 67
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e865a8a787cfa4bba0f65f7877d96a
+      internalID: -748069976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_15
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 129
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1151a063c1a2c47aefbc1ecd7b8854
+      internalID: 647380266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 130
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61dc0cb4ef921c4d980063e6274b315
+      internalID: -599474543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5a54a6c9b3d4441ab173e48eb2f5bd
+      internalID: -1916448016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daba893bf173e7428bed0af3d44d061
+      internalID: -574645689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f152dcb8fa3d9964eb2d5484251eeef9
+      internalID: -1011330600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 65
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4493bab68acb31f4c90b1a02b720e064
+      internalID: -1909100149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 65
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9548323724f35b45b149bc81b17d4f3
+      internalID: 466172357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_22
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 65
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7852a20c67f5b7b46bd60b6c8cddf61c
+      internalID: -1948985797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab10f1473bdc0b04c8512e5a1841e6d9
+      internalID: 1227793868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f841fd8cb6aa9644cabd11dd471e76cd
+      internalID: 842268320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 33
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86590ed1f46a90468e09a3d78513988
+      internalID: -540310146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_26
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920aa51e73c8d744cb51b0152444a814
+      internalID: 1899957900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 50
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bd3256e3e44804d87dbd2a928cd012
+      internalID: -664216666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_28
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 50
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fb960b2392ca14aa345267afe2026e
+      internalID: 685719998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_29
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 50
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8589500070a4a841aced45a29268a77
+      internalID: -476583368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_30
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 50
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19632c09b951ae5489c8e80b3bbb64b9
+      internalID: 1493112493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_31
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 50
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9acbf3ede47f14caaaf25e385d2ab4
+      internalID: 244110964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 50
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e0041ffc7a1794cb2122e32426605d
+      internalID: -21554672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_33
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 50
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c792e934c9d99c14b9a5da2473b24097
+      internalID: 1630644792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_34
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 50
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad654154945739947adaccfffe589306
+      internalID: 1665491383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_35
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 50
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec09fa9e3dea3cc4abeceb881e78f172
+      internalID: 1627291902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_36
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 50
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0142d5499759e9d468804535ac58a16f
+      internalID: -942592195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_37
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 50
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abb5ac9884a0254fb9391cdb40dcb4b
+      internalID: -1654845113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_38
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 50
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eced47863692fb4fb984ed244597911
+      internalID: -2102522082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_39
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 47
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16398932120e7c346b8ca04bb2e589f2
+      internalID: -1922253751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_40
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 47
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eadcd96ebce10429f9d1a2c554f592
+      internalID: 362928893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_41
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 47
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc12cfd409f16e4dbed68d387ceeb30
+      internalID: -1589602779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_42
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 31
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8250effb8ff381459cd66a7e8c2d56c
+      internalID: 1279235822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_43
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 31
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a51e6d404f9fd4cad68665e02054c5
+      internalID: -1652779196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_44
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 31
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8433861cbcb0fba4481a54772786c585
+      internalID: 2073191381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_45
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 31
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8ce0e19e317b944b73795b36a422f1
+      internalID: 765362084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_46
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 31
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88721fd6203f12943804ef69d933ff65
+      internalID: 454989296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_47
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 31
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8149e27b3dc77b945a52ccf9ba8df705
+      internalID: -1318835735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_48
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 31
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d81157128bf98a4d92d8c4050dd46a9
+      internalID: -1497712754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_49
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 31
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e42a47eb8a35a4191e598835ca515c
+      internalID: 1446058967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_50
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 31
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65afbedce99dbff4c8a31712d1d2d387
+      internalID: -1744167999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_51
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 31
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923ede6609fbc4f41ba16e9f20fee01d
+      internalID: -660896590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_52
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 31
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607653470b94d354d802d6e74e51ea3c
+      internalID: 841652747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_53
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 31
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713865217c6a7044f85c80b9cba5238c
+      internalID: 264895595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_54
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 31
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9381b3086966147847d90fcdbc0179
+      internalID: 1935988298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_55
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 31
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d206fda171d764bb598398ab798eea
+      internalID: 1772503023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_56
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49bbe5d66ac05c4e903c93894829709
+      internalID: 708736838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_57
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 31
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b33d59b29190e45902124daa055bdd
+      internalID: 997782857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_58
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 31
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca6a9e95f3bfcf4a9cf411835ba0be1
+      internalID: -1130981896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_59
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 31
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4458e3aec0d8f43979b5642d29a7db
+      internalID: -682240446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_60
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 386
+        width: 129
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9940b47c164a9c42a477d78f99efcfa
+      internalID: -44903266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_61
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 131
+        width: 132
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2690e687795f3a4a8e0e1af41ce2f48
+      internalID: 520097320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamcast - Sonic Adventure 2 - Green Hill Zone_62
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 67
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5b7117cbe2d3b408eaad3209b3b2d8
+      internalID: -1323401207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_0: 24428275
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_1: 479126996
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_10: -755116034
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_11: -479604602
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_12: 1769131787
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_13: -865679820
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_14: -748069976
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_15: 647380266
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_16: -599474543
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_17: -1916448016
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_18: -574645689
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_19: -1011330600
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_2: 1135794730
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_20: -1909100149
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_21: 466172357
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_22: -1948985797
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_23: 1227793868
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_24: 842268320
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_25: -540310146
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_26: 1899957900
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_27: -664216666
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_28: 685719998
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_29: -476583368
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_3: 1297957397
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_30: 1493112493
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_31: 244110964
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_32: -21554672
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_33: 1630644792
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_34: 1665491383
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_35: 1627291902
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_36: -942592195
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_37: -1654845113
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_38: -2102522082
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_39: -1922253751
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_4: -1203524690
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_40: 362928893
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_41: -1589602779
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_42: 1279235822
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_43: -1652779196
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_44: 2073191381
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_45: 765362084
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_46: 454989296
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_47: -1318835735
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_48: -1497712754
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_49: 1446058967
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_5: 1430360159
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_50: -1744167999
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_51: -660896590
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_52: 841652747
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_53: 264895595
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_54: 1935988298
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_55: 1772503023
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_56: 708736838
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_57: 997782857
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_58: -1130981896
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_59: -682240446
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_6: -1419895247
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_60: -44903266
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_61: 520097320
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_62: -1323401207
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_7: 298794535
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_8: 907955543
+      Dreamcast - Sonic Adventure 2 - Green Hill Zone_9: 1685304652
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
