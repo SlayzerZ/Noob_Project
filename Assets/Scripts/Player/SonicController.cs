@@ -17,6 +17,7 @@ public class SonicController : PlayerController
     private bool IsGamePause = false;
     private float Posty;
     private float timeOffset;
+    private Rigidbody2D rd;
 
     public SonicController(Animator anim, float jumpForce, float speed, Transform checkSol, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform) : base(anim, jumpForce, speed, checkSol, laserLength, bCol2d, currentPlatform)
     {
@@ -36,6 +37,7 @@ public class SonicController : PlayerController
         base.Start();
         Posty = camerad.GetComponent<CameraController>().getPostY();
         timeOffset = camerad.GetComponent<CameraController>().getTime();
+        rd = GetComponent<Rigidbody2D>();
     }
 
     public IEnumerator Wait(float delay)
@@ -69,7 +71,7 @@ public class SonicController : PlayerController
         float y = mapSonic.Platform.Move.ReadValue<Vector2>().y;
         float velocity = x * speed;
       //  Debug.Log(GetComponent<Rigidbody2D>().velocity.x);
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(velocity, 0));
+        rd.AddForce(new Vector2(velocity, 0)*Time.deltaTime);
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
         if (x < 0 && !aDroite)

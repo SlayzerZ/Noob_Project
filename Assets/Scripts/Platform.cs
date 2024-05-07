@@ -48,4 +48,14 @@ public class Platform : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        collision.transform.SetParent(transform);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collision.transform.SetParent(null);
+        DontDestroyOnLoad(collision.gameObject);
+    }
 }

@@ -30,8 +30,8 @@ public abstract class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         bCol2d = GetComponent<BoxCollider2D>();
     }
-
-    public bool Grounded()
+    public float offset;
+    public virtual bool Grounded()
     {
         BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
         //Start point of the laser
@@ -47,11 +47,13 @@ public abstract class PlayerController : MonoBehaviour
         {
             //Change the color of the ray for debug purpose
             rayColor = Color.green;
+          //  transform.position = new Vector2(transform.position.x, hit.point.y+ offset);
         }
         else
         {
             //Change the color of the ray for debug purpose
             rayColor = Color.red;
+        
         }
         //Draw the ray for debug purpose
         Debug.DrawRay(startPosition, Vector2.down * laserLength, rayColor);
