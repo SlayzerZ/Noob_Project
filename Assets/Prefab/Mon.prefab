@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 4180076609166950713}
   - component: {fileID: 7545667357873960687}
   - component: {fileID: 1555477620133881893}
-  m_Layer: 0
+  - component: {fileID: 3958699592696173131}
+  m_Layer: 9
   m_Name: Mon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,6 +205,20 @@ MonoBehaviour:
   speed: 0
   spriteRenderer: {fileID: 8200851839405673634}
   damage: 3
+--- !u!114 &3958699592696173131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247380018113398489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a4dbcf48c04b44e8b2cc97119a62d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  obj: {fileID: 247380018113398489}
 --- !u!1 &2884084532820031867
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +230,7 @@ GameObject:
   - component: {fileID: 290601830719703863}
   - component: {fileID: 5881801486947128420}
   - component: {fileID: 5472031705177001058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeakSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

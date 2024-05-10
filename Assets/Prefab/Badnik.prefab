@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8924704970208358778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint2
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5044474079471477388}
   - component: {fileID: 3934571151316090531}
   - component: {fileID: 7163392908802761030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeakSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6377903136894083291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5360481526229766860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Badnik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,8 @@ GameObject:
   - component: {fileID: 3488767964880569720}
   - component: {fileID: 6700796787189523974}
   - component: {fileID: 1203351889659477632}
-  m_Layer: 0
+  - component: {fileID: 3957895330161017619}
+  m_Layer: 9
   m_Name: BadnikG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,3 +396,17 @@ MonoBehaviour:
   waypoints:
   - {fileID: 6377903136894083291}
   - {fileID: 8924704970208358778}
+--- !u!114 &3957895330161017619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731184185519167574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a4dbcf48c04b44e8b2cc97119a62d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  obj: {fileID: 7196882306245323032}

@@ -33,9 +33,8 @@ public abstract class PlayerController : MonoBehaviour
     public float offset;
     public virtual bool Grounded()
     {
-        BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
         //Start point of the laser
-        Vector2 startPosition = (Vector2)transform.position - new Vector2(0, (boxCollider2D.bounds.extents.y + 0.05f));
+        Vector2 startPosition = (Vector2)transform.position - new Vector2(0, (bCol2d.bounds.extents.y + 0.05f));
         //Hit only the objects of Floor layer
         int layerMask = LayerMask.GetMask("Ground","Platform");
         //Check if the laser hit something

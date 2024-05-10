@@ -53,6 +53,15 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Special"",
+                    ""type"": ""Button"",
+                    ""id"": ""c391c3ae-8415-4588-ba41-5cd98c35c214"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4e075495-2176-468b-bd0e-9504031fe632"",
+                    ""path"": ""<Keyboard>/semicolon"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Special"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -199,6 +219,7 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
         m_Platform_Move = m_Platform.FindAction("Move", throwIfNotFound: true);
         m_Platform_Jump = m_Platform.FindAction("Jump", throwIfNotFound: true);
         m_Platform_Pause = m_Platform.FindAction("Pause", throwIfNotFound: true);
+        m_Platform_Special = m_Platform.FindAction("Special", throwIfNotFound: true);
         // Combat
         m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
         m_Combat_Newaction = m_Combat.FindAction("New action", throwIfNotFound: true);
@@ -269,6 +290,7 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
     private readonly InputAction m_Platform_Move;
     private readonly InputAction m_Platform_Jump;
     private readonly InputAction m_Platform_Pause;
+    private readonly InputAction m_Platform_Special;
     public struct PlatformActions
     {
         private @ControlMapSonic m_Wrapper;
@@ -276,6 +298,7 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Platform_Move;
         public InputAction @Jump => m_Wrapper.m_Platform_Jump;
         public InputAction @Pause => m_Wrapper.m_Platform_Pause;
+        public InputAction @Special => m_Wrapper.m_Platform_Special;
         public InputActionMap Get() { return m_Wrapper.m_Platform; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -294,6 +317,9 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @Special.started += instance.OnSpecial;
+            @Special.performed += instance.OnSpecial;
+            @Special.canceled += instance.OnSpecial;
         }
 
         private void UnregisterCallbacks(IPlatformActions instance)
@@ -307,6 +333,9 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @Special.started -= instance.OnSpecial;
+            @Special.performed -= instance.OnSpecial;
+            @Special.canceled -= instance.OnSpecial;
         }
 
         public void RemoveCallbacks(IPlatformActions instance)
@@ -421,6 +450,7 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnSpecial(InputAction.CallbackContext context);
     }
     public interface ICombatActions
     {

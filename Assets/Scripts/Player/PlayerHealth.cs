@@ -14,6 +14,7 @@ public abstract class PlayerHealth : MonoBehaviour
     public SpriteRenderer graphics;
     protected float velocity;
     protected bool ground;
+    private Animator animator;
 
     public PlayerHealth(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, HealthBar healthBar, SpriteRenderer graphics, float velocity, bool ground, bool isInvincible)
     {
@@ -34,6 +35,7 @@ public abstract class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
         velocity = GetComponent<PlayerController>().speed;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -54,11 +56,11 @@ public abstract class PlayerHealth : MonoBehaviour
                 currentHealth -= damage;
             }
             healthBar.setHealth(currentHealth);
+            animator.SetTrigger("Damage 0");
             isInvincible=true;
             StartCoroutine(invicibilityFlash());
             StartCoroutine(HandleInvicinbile());
             StartCoroutine(DisableSpeed());
-            GetComponent<Animator>().SetTrigger("Damage 0");
         }
     }
 
@@ -81,9 +83,9 @@ public abstract class PlayerHealth : MonoBehaviour
 
     public IEnumerator DisableSpeed()
     {
-        GetComponent<SonicController>().speed = 0;
+        GetComponent<PlayerController>().speed = 0;
         yield return new WaitForSeconds(1f);
-        GetComponent<SonicController>().speed = velocity;
+        GetComponent<PlayerController>().speed = velocity;
     }
 
 }

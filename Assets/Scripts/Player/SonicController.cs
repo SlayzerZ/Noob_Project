@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class SonicController : PlayerController
 {
-    ControlMapSonic mapSonic;
+    public ControlMapSonic mapSonic;
     public float jumpForce2 = 0;
     public Transform camerad;
     private int Jump = 0;
@@ -157,4 +157,10 @@ public class SonicController : PlayerController
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(checkSol.position,rayonSol);
     }*/
+
+    public float getX()
+    {
+        float x = mapSonic.Platform.Move.ReadValue<Vector2>().x;
+        return x;
+    }
 }
