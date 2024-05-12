@@ -15,7 +15,7 @@ public class Ladder : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<PlayerController>();
-        JF = playerController.jumpForce;
+        JF = playerController.jumpForce2;
     }
 
     void Start()
@@ -33,7 +33,7 @@ public class Ladder : MonoBehaviour
             playerController.setVy(0,0.2f);
             if (!add)
             {
-                playerController.jumpForce *= 5;
+                playerController.jumpForce2 *= 5;
                 add = true;
             }
         }
@@ -54,7 +54,7 @@ public class Ladder : MonoBehaviour
         {
             InRange = false;
             playerController.IsClimbing = false;
-            playerController.jumpForce = JF;
+            playerController.jumpForce2 = JF;
             add = false;
             arrow.enabled = false;
         }

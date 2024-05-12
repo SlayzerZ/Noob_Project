@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -9702,10 +9702,10 @@ TextureImporter:
       name: d4c5dv2-39c8fe34-4f87-449e-9d21-a5aa82fb2dc3_464
       rect:
         serializedVersion: 2
-        x: 146
-        y: 278
-        width: 22
-        height: 23
+        x: 144
+        y: 261
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10156,48 +10156,6 @@ TextureImporter:
       bones: []
       spriteID: 991542557da5bfb40b632781ff0ec539
       internalID: 1976575725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: d4c5dv2-39c8fe34-4f87-449e-9d21-a5aa82fb2dc3_486
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 269
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fab121ce095a98d48819244ba84df7fc
-      internalID: 1950229977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: d4c5dv2-39c8fe34-4f87-449e-9d21-a5aa82fb2dc3_487
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 261
-        width: 5
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4297c930c45a6fc4fa70f83d30650fa5
-      internalID: -499640152
       vertices: []
       indices: 
       edges: []

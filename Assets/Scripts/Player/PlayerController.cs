@@ -6,6 +6,7 @@ public abstract class PlayerController : MonoBehaviour
 {
     public Animator anim;
     public float jumpForce = 0;
+    public float jumpForce2 = 0;
     public float speed = 8f;
     public float laserLength = 0.025f;
     protected BoxCollider2D bCol2d;
@@ -15,7 +16,7 @@ public abstract class PlayerController : MonoBehaviour
     [HideInInspector] public int Jump = 0;
     protected Rigidbody2D rd;
 
-    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd)
+    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2)
     {
         this.anim = anim;
         this.jumpForce = jumpForce;
@@ -27,6 +28,7 @@ public abstract class PlayerController : MonoBehaviour
         this.movement = movement;
         Jump = jump;
         this.rd = rd;
+        this.jumpForce2 = jumpForce2;
     }
 
     public static PlayerController Instance;

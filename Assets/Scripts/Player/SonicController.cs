@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 public class SonicController : PlayerController
 {
     public ControlMapSonic mapSonic;
-    public float jumpForce2 = 0;
     public Transform camerad;
     private bool ground = false;
     private bool HasJump = false;
@@ -18,8 +17,8 @@ public class SonicController : PlayerController
     private float timeOffset;
 
     public SonicController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
-        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd) 
-        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd)
+        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2) 
+        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2)
     {
     }
 
@@ -83,7 +82,7 @@ public class SonicController : PlayerController
         {
             changerDirection();
         }
-        if (y < 0 && ground) 
+        if (y < 0 && ground && x == 0) 
         { 
             camerad.GetComponent<CameraController>().postOffset.y = 2.5f;
             camerad.GetComponent<CameraController>().timeOffset = 2;
@@ -148,7 +147,7 @@ public class SonicController : PlayerController
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce2));
         }
-        Debug.Log("HasJump : " + HasJump);
+      //  Debug.Log("HasJump : " + HasJump);
     }
     /*private void OnDrawGizmos()
     {

@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: d746a247cd4dac14597beee5614e6fc1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 179
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e556d43dc827dd498785f5394a15bbe
+      internalID: 64472454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 178
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6f90b8304d80c46b077663566533d6
+      internalID: -1895976848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 178
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7e7a8fba2a43f46bede1610d17d8b8
+      internalID: 1076219741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 178
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e00a46ce0e61d946af0a03d0405661a
+      internalID: -2092859071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 178
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f3fcff1c105644a9dd19b7e7eb0c48
+      internalID: 404865564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 177
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94f10c1525f16e4bad10c7b84b04c36
+      internalID: -1226944365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 178
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e60fcd6bfaf69419446e8c3099e745
+      internalID: 1988097700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 178
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba795749444c4ff42984711a700e19c2
+      internalID: -185410850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 130
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533fc923c78309b479c9a100d45f3055
+      internalID: 1506657451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 131
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a474b2d1e45011f42937f64dc96a54e2
+      internalID: -1991163734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 130
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4fa39f325e1b940a0f0e132d8b9aa4
+      internalID: 857928151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 130
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3967e9613ab3a5419d41731e7c78442
+      internalID: -1863519092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 131
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce06fcf6bc6cbb14999870ab2972721d
+      internalID: -194025160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 130
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b85da246cdb014a9c27d1518bfae54
+      internalID: -179865836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 93
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ad8e22ed6c5b34098526d62e4c2a50
+      internalID: -958875246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 91
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418a5e2b6bbaff74581baf7856848004
+      internalID: 2044535462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 92
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a850cb3d6211cee4ebde10f8e76ac2a7
+      internalID: 496093724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 93
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a13a63af0057ca4d913be29c9428605
+      internalID: -530485715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 93
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1467360d08df7864795fd943a77e4420
+      internalID: -887284836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 92
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1545d200a4df10449492081baf85728
+      internalID: 887017590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_0: 64472454
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_1: -1895976848
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_10: 857928151
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_11: -1863519092
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_12: -194025160
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_13: -179865836
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_14: -958875246
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_15: 2044535462
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_16: 496093724
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_17: -530485715
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_18: -887284836
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_19: 887017590
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_2: 1076219741
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_3: -2092859071
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_4: 404865564
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_5: -1226944365
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_6: 1988097700
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_7: -185410850
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_8: 1506657451
+      Game_Boy_Advance_-_Sonic_Advance_2_-_Shields-removebg-preview_9: -1991163734
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

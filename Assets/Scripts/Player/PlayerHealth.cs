@@ -11,7 +11,7 @@ public abstract class PlayerHealth : MonoBehaviour
     public int maxLife = 9;
     public int startLife = 3;
     protected int currentLife = 1;
-    public HealthBar healthBar;
+    public Bar healthBar;
     public LifeCount lifeCount;
     protected bool isInvincible = false;
     public SpriteRenderer graphics;
@@ -21,7 +21,7 @@ public abstract class PlayerHealth : MonoBehaviour
     private Transform playerSpawn;
     private Animator fadeSys;
 
-    public PlayerHealth(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, HealthBar healthBar, SpriteRenderer graphics, float velocity, bool ground, bool isInvincible)
+    public PlayerHealth(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, Bar healthBar, SpriteRenderer graphics, float velocity, bool ground, bool isInvincible)
     {
         this.maxHealth = maxHealth;
         this.currentHealth = currentHealth;

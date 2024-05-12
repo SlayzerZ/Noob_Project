@@ -4,6 +4,7 @@ public class WeakSpot : MonoBehaviour
 {
     public new GameObject DestroyObject;
     public float bounce;
+    public float rmana;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("lol");
@@ -11,6 +12,7 @@ public class WeakSpot : MonoBehaviour
         {
             collision.GetComponent<Rigidbody2D>().AddForce(Vector2.up * bounce);
             Destroy(DestroyObject);
+            SpecialAttack.Instance.RegenMana(rmana);
         }
     }
 }

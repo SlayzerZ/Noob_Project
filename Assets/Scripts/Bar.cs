@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class Bar : MonoBehaviour
 {
     public Slider slider;
     public Gradient sliderGradient;
@@ -15,6 +15,19 @@ public class HealthBar : MonoBehaviour
     }
 
     public void setHealth(int health)
+    {
+        slider.value = health;
+        fill.color = sliderGradient.Evaluate(slider.normalizedValue);
+    }
+
+    public void setMaxMana(float mana)
+    {
+        slider.maxValue = mana;
+        slider.value = 0;
+        fill.color = sliderGradient.Evaluate(slider.normalizedValue);
+    }
+
+    public void setMana(float health)
     {
         slider.value = health;
         fill.color = sliderGradient.Evaluate(slider.normalizedValue);
