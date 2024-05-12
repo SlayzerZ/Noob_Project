@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerHealthSonic : PlayerHealth
 {
-    public PlayerHealthSonic(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, HealthBar healthBar,
-    SpriteRenderer graphics, float velocity, bool ground, bool isInvincible) : base(maxHealth, currentHealth, invicibilityTime, invicibilityFlashDelay, healthBar, graphics,velocity,ground,isInvincible) { }
+    public PlayerHealthSonic(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, HealthBar healthBar,
+    SpriteRenderer graphics, float velocity, bool ground, bool isInvincible) : base(maxHealth, currentHealth, invicibilityTime, invicibilityFlashDelay, maxLife, startLife, currentLife, healthBar, graphics,velocity,ground,isInvincible) { }
 
     protected override void Start()
     {

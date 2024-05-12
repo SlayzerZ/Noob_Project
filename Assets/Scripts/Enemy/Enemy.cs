@@ -19,8 +19,7 @@ public abstract class Enemy : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
-            playerHealth.TakeDamage(damage);
+            PlayerHealth.Instance.TakeDamage(damage);
         }
     }
 }

@@ -24,5 +24,12 @@ public class Inventory : MonoBehaviour
     {
         coinsCount += coins;
         coinsCountsText.text = coinsCount.ToString();
+        LevelManager.Instance.coinsPickup += coins;
+    }
+
+    public void RemoveCoins(int coins)
+    {
+        coinsCount -= coins;
+        coinsCountsText.text = coinsCount.ToString();
     }
 }

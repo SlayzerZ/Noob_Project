@@ -7,30 +7,49 @@ public abstract class PlayerController : MonoBehaviour
     public Animator anim;
     public float jumpForce = 0;
     public float speed = 8f;
-   // public float rayonSol = 0.1f;
-    public Transform checkSol;
-   // public LayerMask Sol;
     public float laserLength = 0.025f;
     protected BoxCollider2D bCol2d;
     protected Collider2D currentPlatform;
+    [HideInInspector] public bool IsClimbing = false;
+    public Mouvement movement;
+    [HideInInspector] public int Jump = 0;
+    protected Rigidbody2D rd;
 
-    public PlayerController(Animator anim, float jumpForce, float speed, Transform checkSol, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform)
+    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd)
     {
         this.anim = anim;
         this.jumpForce = jumpForce;
         this.speed = speed;
-        this.checkSol = checkSol;
         this.laserLength = laserLength;
         this.bCol2d = bCol2d;
         this.currentPlatform = currentPlatform;
+        IsClimbing = isClimbing;
+        this.movement = movement;
+        Jump = jump;
+        this.rd = rd;
+    }
+
+    public static PlayerController Instance;
+
+    protected virtual void Awake()
+    {
+        movement = new Mouvement();
+        movement.Movement.Enable();
+        if (Instance != null)
+        {
+            Debug.LogWarning("Il ya déjà une instance de PlayerController.");
+            return;
+        }
+        Instance = this;
     }
 
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
         bCol2d = GetComponent<BoxCollider2D>();
+        rd = GetComponent<Rigidbody2D>();
     }
-    public float offset;
+    //public float offset;
     public virtual bool Grounded()
     {
         //Start point of the laser
@@ -116,5 +135,20 @@ public abstract class PlayerController : MonoBehaviour
         Debug.DrawRay(startPositionRight, Vector2.down * laserLength, rayColor);
         //If the ray hits a platform returns true, false otherwise
         return col2DHit != null;
+    }
+    public float getX()
+    {
+        float x = movement.Movement.Movement.ReadValue<Vector2>().x;
+        return x;
+    }
+
+    public float getY()
+    {
+        float y = movement.Movement.Movement.ReadValue<Vector2>().y;
+        return y;
+    }
+    public void setVy(float x,float y)
+    {
+        rd.velocity = new Vector2(x,y);
     }
 }

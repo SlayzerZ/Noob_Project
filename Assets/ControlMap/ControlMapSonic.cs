@@ -28,15 +28,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
             ""id"": ""8e48f81d-8a2e-435d-a694-ddd0c5815c33"",
             ""actions"": [
                 {
-                    ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""17f9d2a0-5443-4c59-8603-3126ccf9c130"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""6f45eb55-a63c-488d-ab75-041a0698b63b"",
@@ -65,61 +56,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": ""Move"",
-                    ""id"": ""fdcb8183-85eb-47a7-81b8-1307aa912efe"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""721508d0-763f-4355-b59f-b4c125a65414"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""7ca3a0ce-052e-4e7f-b17d-3755c27b5f41"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""4dbce8d4-4258-45b0-b76a-2399c4a892c1"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""99190030-9416-419f-bc22-3d229e67398a"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
                 {
                     ""name"": """",
                     ""id"": ""4ef3f351-12e9-4b81-8cb6-648074f40394"",
@@ -216,7 +152,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
 }");
         // Platform
         m_Platform = asset.FindActionMap("Platform", throwIfNotFound: true);
-        m_Platform_Move = m_Platform.FindAction("Move", throwIfNotFound: true);
         m_Platform_Jump = m_Platform.FindAction("Jump", throwIfNotFound: true);
         m_Platform_Pause = m_Platform.FindAction("Pause", throwIfNotFound: true);
         m_Platform_Special = m_Platform.FindAction("Special", throwIfNotFound: true);
@@ -287,7 +222,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
     // Platform
     private readonly InputActionMap m_Platform;
     private List<IPlatformActions> m_PlatformActionsCallbackInterfaces = new List<IPlatformActions>();
-    private readonly InputAction m_Platform_Move;
     private readonly InputAction m_Platform_Jump;
     private readonly InputAction m_Platform_Pause;
     private readonly InputAction m_Platform_Special;
@@ -295,7 +229,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
     {
         private @ControlMapSonic m_Wrapper;
         public PlatformActions(@ControlMapSonic wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Platform_Move;
         public InputAction @Jump => m_Wrapper.m_Platform_Jump;
         public InputAction @Pause => m_Wrapper.m_Platform_Pause;
         public InputAction @Special => m_Wrapper.m_Platform_Special;
@@ -308,9 +241,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlatformActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlatformActionsCallbackInterfaces.Add(instance);
-            @Move.started += instance.OnMove;
-            @Move.performed += instance.OnMove;
-            @Move.canceled += instance.OnMove;
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
@@ -324,9 +254,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
 
         private void UnregisterCallbacks(IPlatformActions instance)
         {
-            @Move.started -= instance.OnMove;
-            @Move.performed -= instance.OnMove;
-            @Move.canceled -= instance.OnMove;
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
@@ -447,7 +374,6 @@ public partial class @ControlMapSonic: IInputActionCollection2, IDisposable
     public CutsceneActions @Cutscene => new CutsceneActions(this);
     public interface IPlatformActions
     {
-        void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnSpecial(InputAction.CallbackContext context);

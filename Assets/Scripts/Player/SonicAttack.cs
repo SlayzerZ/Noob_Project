@@ -13,6 +13,7 @@ public class SonicAttack : MonoBehaviour
     private SonicController controller;
     private BoxCollider2D bCol2d;
     private float velocity;
+    private float JF;
     private bool attack = false;
     // Start is called before the first frame update
     protected void Start()
@@ -21,6 +22,7 @@ public class SonicAttack : MonoBehaviour
         controller = GetComponent<SonicController>();
         bCol2d = GetComponent<BoxCollider2D>();
         velocity = controller.speed;
+        JF = controller.jumpForce;
         controller.mapSonic.Platform.Special.performed += SpecialAttack;
     }
 
@@ -32,8 +34,8 @@ public class SonicAttack : MonoBehaviour
 
     void SpecialAttack(InputAction.CallbackContext obj)
     {
-        float x = controller.mapSonic.Platform.Move.ReadValue<Vector2>().x;
-        float y = controller.mapSonic.Platform.Move.ReadValue<Vector2>().y;
+        float x = controller.movement.Movement.Movement.ReadValue<Vector2>().x;
+        float y = controller.movement.Movement.Movement.ReadValue<Vector2>().y;
         if (controller.Grounded() && x != 0)
         {
             StartCoroutine(SideAttackGround());
@@ -69,6 +71,7 @@ public class SonicAttack : MonoBehaviour
     {
         anim.SetBool("SideGroundAttack",true);
         controller.speed = 0;
+        controller.jumpForce = 0;
         attack = true;
         while (attack)
         {
@@ -77,6 +80,7 @@ public class SonicAttack : MonoBehaviour
         }
         anim.SetBool("SideGroundAttack", false);
         controller.speed = velocity;
+        controller.jumpForce = JF;
     }
     private IEnumerator sideAttackGround()
     {

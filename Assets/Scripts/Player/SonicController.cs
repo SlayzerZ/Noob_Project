@@ -10,21 +10,22 @@ public class SonicController : PlayerController
     public ControlMapSonic mapSonic;
     public float jumpForce2 = 0;
     public Transform camerad;
-    private int Jump = 0;
     private bool ground = false;
     private bool HasJump = false;
     private bool aDroite = false;
     private bool IsGamePause = false;
     private float Posty;
     private float timeOffset;
-    private Rigidbody2D rd;
 
-    public SonicController(Animator anim, float jumpForce, float speed, Transform checkSol, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform) : base(anim, jumpForce, speed, checkSol, laserLength, bCol2d, currentPlatform)
+    public SonicController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
+        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd) 
+        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd)
     {
     }
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         mapSonic = new ControlMapSonic();
         mapSonic.Platform.Enable();
         mapSonic.Platform.Jump.performed += JumpAction;
@@ -37,7 +38,6 @@ public class SonicController : PlayerController
         base.Start();
         Posty = camerad.GetComponent<CameraController>().getPostY();
         timeOffset = camerad.GetComponent<CameraController>().getTime();
-        rd = GetComponent<Rigidbody2D>();
     }
 
     public IEnumerator Wait(float delay)
@@ -56,7 +56,7 @@ public class SonicController : PlayerController
     void Update()
     {
         SonicD();
-       // Debug.Log(aDroite);
+        anim.SetBool("Climbing", IsClimbing);
     }
     void changerDirection()
     {
@@ -67,13 +67,14 @@ public class SonicController : PlayerController
     }
     void SonicD()
     {
-        float x = mapSonic.Platform.Move.ReadValue<Vector2>().x;
-        float y = mapSonic.Platform.Move.ReadValue<Vector2>().y;
-        float velocity = x * speed;
-      //  Debug.Log(GetComponent<Rigidbody2D>().velocity.x);
-        rd.AddForce(new Vector2(velocity, 0)*Time.deltaTime);
-
-        anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
+        float x = movement.Movement.Movement.ReadValue<Vector2>().x;
+        float y = movement.Movement.Movement.ReadValue<Vector2>().y;
+        if (!IsClimbing)
+        {
+            float velocity = x * speed;
+            rd.AddForce(new Vector2(velocity, 0)*Time.deltaTime);
+        }
+        anim.SetFloat("Speed", Mathf.Abs(rd.velocity.x));
         if (x < 0 && !aDroite)
         {
             changerDirection();
@@ -82,13 +83,13 @@ public class SonicController : PlayerController
         {
             changerDirection();
         }
-        if (y < 0 ) 
+        if (y < 0 && ground) 
         { 
             camerad.GetComponent<CameraController>().postOffset.y = 2.5f;
             camerad.GetComponent<CameraController>().timeOffset = 2;
             anim.SetBool("LookUp", false);
             anim.SetBool("LookDown", true);
-        } else if (y > 0)
+        } else if (y > 0 && ground)
         {
             camerad.GetComponent<CameraController>().postOffset.y = 5.5f;
             camerad.GetComponent<CameraController>().timeOffset = 2;
@@ -105,7 +106,6 @@ public class SonicController : PlayerController
 
     void Ground()
     {
-       // ground = Physics2D.OverlapCircle(checkSol.position, rayonSol,Sol);
         ground = Grounded();
         anim.SetBool("Ground",ground);
         anim.SetBool("HasJump",HasJump);
@@ -125,14 +125,12 @@ public class SonicController : PlayerController
         if (IsGamePause)
         {
             IsGamePause = false;
-        //    Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1;
 
         }
         else
         {
             IsGamePause = true;
-         //   Cursor.lockState = CursorLockMode.Confined;
             Time.timeScale = 0f;
         }
     }
@@ -157,10 +155,4 @@ public class SonicController : PlayerController
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(checkSol.position,rayonSol);
     }*/
-
-    public float getX()
-    {
-        float x = mapSonic.Platform.Move.ReadValue<Vector2>().x;
-        return x;
-    }
 }
