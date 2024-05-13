@@ -9,6 +9,7 @@ public class SonicController : PlayerController
 {
     public ControlMapSonic mapSonic;
     public Transform camerad;
+    public bool ss;
     private bool ground = false;
     private bool HasJump = false;
     private bool aDroite = false;
@@ -26,9 +27,15 @@ public class SonicController : PlayerController
     {
         base.Awake();
         mapSonic = new ControlMapSonic();
-        mapSonic.Platform.Enable();
+        if (ss)
+        {
+            mapSonic.SuperSonic.Enable();
+        } else
+        {
+            mapSonic.Platform.Enable();
+        }
         mapSonic.Platform.Jump.performed += JumpAction;
-        mapSonic.Platform.Pause.performed += HandlePause;
+       // mapSonic.Platform.Pause.performed += HandlePause;
     }
 
     // Start is called before the first frame update
@@ -92,7 +99,13 @@ public class SonicController : PlayerController
         {
             camerad.GetComponent<CameraController>().postOffset.y = 5.5f;
             camerad.GetComponent<CameraController>().timeOffset = 2;
-            anim.SetBool("LookUp", true);
+            if (!ss)
+            {
+                anim.SetBool("LookUp", true);
+            } else
+            {
+                anim.SetBool("LookUp", false);
+            }
             anim.SetBool("LookDown", false);
         } else
         {

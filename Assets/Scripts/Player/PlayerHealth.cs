@@ -113,8 +113,9 @@ public abstract class PlayerHealth : MonoBehaviour
         currentLife -= 1;
         lifeCount.setLife(currentLife);
         PlayerController.Instance.enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        PlayerController.Instance.bCol2d.enabled = false;
+        PlayerController.Instance.rd.bodyType = RigidbodyType2D.Kinematic;
+        PlayerController.Instance.rd.velocity = Vector2.zero;
         if (currentLife > 0)
         {
             StartCoroutine(ReplacePlayer());

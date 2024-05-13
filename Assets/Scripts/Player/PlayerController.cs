@@ -9,12 +9,12 @@ public abstract class PlayerController : MonoBehaviour
     public float jumpForce2 = 0;
     public float speed = 8f;
     public float laserLength = 0.025f;
-    protected BoxCollider2D bCol2d;
+    [HideInInspector] public BoxCollider2D bCol2d;
     protected Collider2D currentPlatform;
     [HideInInspector] public bool IsClimbing = false;
     public Mouvement movement;
     [HideInInspector] public int Jump = 0;
-    protected Rigidbody2D rd;
+    [HideInInspector] public Rigidbody2D rd;
 
     protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2)
     {

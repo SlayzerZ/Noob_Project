@@ -52,8 +52,8 @@ public class SonicAttack : SpecialAttack
             {
                 if (currentMana >= ManaUGA)
                 {
-                    
-                    DrainMana(ManaUGA);
+                    StartCoroutine(UpAttackGround());
+                    StartCoroutine(upAttackGround());
                 }
             } else if (y < 0 && x == 0)
             {
@@ -87,7 +87,7 @@ public class SonicAttack : SpecialAttack
             {
                 if (currentMana >= ManaDAA)
                 {
-                    
+                    StartCoroutine(DownAttackAerial());
                     DrainMana(ManaDAA);
                 }
             }
@@ -118,23 +118,15 @@ public class SonicAttack : SpecialAttack
         Debug.DrawRay(startPosition, Vector2.right * laserLength, rayColor);
     }
 
-    void SAAtouch()
+    void SAAtouch(float radius, Vector2 direction)
     {
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, laserRadius, transform.position, 0f, layerMask);
-        //The color of the ray for debug purpose
-        Color rayColor = Color.red;
-        //If the object is not null
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, radius, direction, 0f, layerMask);
         if (hit.collider != null)
         {
-            //Change the color of the ray for debug purpose
-            rayColor = Color.yellow;
-            hit.collider.transform.GetComponent<EnemyHealth>().TakeDamage(50);
-        }
-        else
-        {
-            //Change the color of the ray for debug purpose
-            rayColor = Color.blue;
-
+            if (hit.collider.transform !=  null)
+            {
+                hit.collider.transform.GetComponent<EnemyHealth>().TakeDamage(50);
+            }
         }
     }
 
@@ -168,7 +160,7 @@ public class SonicAttack : SpecialAttack
         GetComponent<Rigidbody2D>().AddForce(new Vector2(1500 * transform.localScale.x, 0));
         while (attack)
         {
-            SAAtouch();
+            SAAtouch(laserRadius, transform.position);
             yield return new WaitForSeconds(attackDelay);
         }
         anim.SetBool("DownGroundAttack", false);
@@ -180,6 +172,35 @@ public class SonicAttack : SpecialAttack
         attack = false;
     }
 
+    private IEnumerator UpAttackGround()
+    {
+        anim.SetTrigger("UpGroundSpecial");
+        controller.speed = 0;
+        controller.ss = true;
+        anim.SetBool("SS", controller.ss);
+        yield return new WaitForSeconds(1f);
+        controller.speed = velocity;
+        while (controller.ss)
+        {
+            SAAtouch(laserRadius, transform.position);
+            yield return new WaitForSeconds(attackDelay);
+        }
+    }
+    private IEnumerator upAttackGround()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2f);
+            DrainMana(1);
+            if (currentMana == 0)
+            {
+                controller.ss = false;
+                anim.SetBool("SS", controller.ss);
+                break;
+            }
+        }
+    }
+
     private IEnumerator SideAttackAerial()
     {
         anim.SetBool("SideAerialAttack", true);
@@ -189,7 +210,7 @@ public class SonicAttack : SpecialAttack
         yield return new WaitForSeconds(1f);
         while (attack)
         {
-            SAAtouch();
+            SAAtouch(laserRadius, transform.position);
             yield return new WaitForSeconds(attackDelay);
         }
         anim.SetBool("SideAerialAttack", false);
@@ -201,6 +222,21 @@ public class SonicAttack : SpecialAttack
         attack = false;
     }
 
+    private IEnumerator DownAttackAerial()
+    {
+        anim.SetTrigger("DownAerialAttack");
+        controller.speed = 0;
+        controller.Jump = 1;
+        yield return new WaitForSeconds(1f);
+        GetComponent<Rigidbody2D>().AddForce(Vector2.down * 500);
+        while (!controller.Grounded())
+        {
+            SAAtouch(laserRadius + 1, Vector2.down);
+            yield return new WaitForSeconds(attackDelay);
+        }
+        controller.speed = velocity;
+    }
+
     private IEnumerator UpAttackAerial()
     {
         anim.SetTrigger("UpAerialSpecial");
@@ -209,8 +245,8 @@ public class SonicAttack : SpecialAttack
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * (controller.jumpForce * 3));
     }
 
-    /*private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, laserRadius);
-    }*/
+    }
 }

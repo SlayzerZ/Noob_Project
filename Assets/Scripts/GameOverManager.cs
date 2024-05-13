@@ -38,7 +38,8 @@ public class GameOverManager : MonoBehaviour
 
     public void mainMenuButton()
     {
-
+        DontDestroyOnLoadS.Instance.RemoveFromDD();
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void quitButton()
