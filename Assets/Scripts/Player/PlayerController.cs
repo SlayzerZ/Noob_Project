@@ -16,7 +16,9 @@ public abstract class PlayerController : MonoBehaviour
     [HideInInspector] public int Jump = 0;
     [HideInInspector] public Rigidbody2D rd;
 
-    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2)
+    public bool isAccrocher = false;
+
+    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2, bool isAccrocher)
     {
         this.anim = anim;
         this.jumpForce = jumpForce;
@@ -29,6 +31,7 @@ public abstract class PlayerController : MonoBehaviour
         Jump = jump;
         this.rd = rd;
         this.jumpForce2 = jumpForce2;
+        this.isAccrocher = isAccrocher;
     }
 
     public static PlayerController Instance;
@@ -151,6 +154,7 @@ public abstract class PlayerController : MonoBehaviour
     }
     public void setVy(float x,float y)
     {
-        rd.velocity = new Vector2(x,y);
+       rd.velocity = new Vector2(x,y);
+       //rd.isKinematic = true;
     }
 }

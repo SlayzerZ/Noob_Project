@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -117,9 +118,10 @@ public class SonicAttack : SpecialAttack
         //Draw the ray for debug purpose
         Debug.DrawRay(startPosition, Vector2.right * laserLength, rayColor);
     }
-
+    public Vector2 sphereDir;
     void SAAtouch(float radius, Vector2 direction)
     {
+        sphereDir = direction;
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, radius, direction, 0f, layerMask);
         if (hit.collider != null)
         {
@@ -129,7 +131,6 @@ public class SonicAttack : SpecialAttack
             }
         }
     }
-
     private IEnumerator SideAttackGround()
     {
         anim.SetBool("SideGroundAttack",true);
@@ -247,6 +248,8 @@ public class SonicAttack : SpecialAttack
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, laserRadius);
+       /* Gizmos.DrawSphere(transform.position, laserRadius);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position + (Vector3)Vector2.down * 10 , laserRadius);*/
     }
 }

@@ -18,9 +18,15 @@ public class SonicController : PlayerController
     private float timeOffset;
 
     public SonicController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
-        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2) 
-        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2)
+        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2, bool isAccrocher) 
+        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2, isAccrocher)
     {
+    }
+
+
+    public void handleAccrocher()
+    {
+        isAccrocher = true;
     }
 
     protected override void Awake()

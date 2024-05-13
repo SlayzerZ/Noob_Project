@@ -7,6 +7,7 @@ public class LoadScene : MonoBehaviour
 {
     public string SceneName;
     public Animator FadeSys;
+    public bool Menu = false;
 
     private void Awake()
     {
@@ -24,6 +25,10 @@ public class LoadScene : MonoBehaviour
     {
         FadeSys.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
+        if (Menu)
+        {
+            DontDestroyOnLoadS.Instance.RemoveFromDD();
+        }
         SceneManager.LoadScene(SceneName);
     }
 }

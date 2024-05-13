@@ -6,27 +6,25 @@ public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
     public float seconds;
-    private bool swpan = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(Spawn());
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        StartCoroutine(Spawn());
     }
 
     private IEnumerator Spawn()
     {
-        if (!swpan)
+
+        while(true)
         {
             yield return new WaitForSeconds(seconds);
-            Instantiate(prefab);
-            swpan = true;
-           // yield return new WaitForSeconds(seconds);
+            Instantiate(prefab,transform.position,Quaternion.identity);
+
         }
     }
 }
