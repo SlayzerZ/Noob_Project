@@ -12,17 +12,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject SettingsUI;
     private float JF;
     private bool isSettings = false;
+    public AudioClip pauseSound;
+    public AudioClip exitSound;
+    public AudioClip settingsSound;
 
     private void Start()
     {
         PlayerController.Instance.movement.Movement.Pause.performed += Paused;
         JF = PlayerController.Instance.jumpForce;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void Pause()
@@ -35,6 +32,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        AudioManager.Instance.playAtPoint(exitSound, transform.position);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gamePaused = false;
@@ -49,6 +47,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.playAtPoint(pauseSound, transform.position);
             Pause();
         }
     }
@@ -69,6 +68,7 @@ public class PauseMenu : MonoBehaviour
         {
             isSettings = false;
         }
+        AudioManager.Instance.playAtPoint(settingsSound,transform.position);
         SettingsUI.SetActive(isSettings);
     }
 }

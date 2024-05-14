@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PickObject : MonoBehaviour
 {
+    public AudioClip clip;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Player") && gameObject.CompareTag("Rings"))
         {
+            AudioManager.Instance.playAtPoint(clip,transform.position);
             Inventory.Instance.AddCoins(1);
             Destroy(gameObject);
         }
@@ -17,6 +19,7 @@ public class PickObject : MonoBehaviour
     {
         if (collision.CompareTag("Player") && gameObject.CompareTag("Rings"))
         {
+            AudioManager.Instance.playAtPoint(clip, transform.position);
             Inventory.Instance.AddCoins(1);
             Destroy(gameObject);
         }

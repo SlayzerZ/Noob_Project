@@ -13,8 +13,10 @@ public abstract class PlayerHealth : MonoBehaviour
     protected int currentLife = 1;
     public Bar healthBar;
     public LifeCount lifeCount;
-    protected bool isInvincible = false;
+    public AudioClip damageSound;
+    public AudioClip deathSound;
     public SpriteRenderer graphics;
+    [HideInInspector] public bool isInvincible = false;
     protected float velocity;
     protected bool ground;
     private Animator animator;
@@ -75,9 +77,11 @@ public abstract class PlayerHealth : MonoBehaviour
         {
             if (currentHealth - damage <= 0)
             {
+                AudioManager.Instance.playAtPoint(deathSound,transform.position);
                 currentHealth = 0;
             } else
             {
+                AudioManager.Instance.playAtPoint(damageSound, transform.position);
                 currentHealth -= damage;
             }
             healthBar.setHealth(currentHealth);
@@ -156,7 +160,11 @@ public abstract class PlayerHealth : MonoBehaviour
     public IEnumerator DisableSpeed()
     {
         GetComponent<PlayerController>().speed = 0;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
+        if (!GetComponent<PlayerController>().Grounded())
+        {
+            animator.SetTrigger("DamageAir");
+        }
         GetComponent<PlayerController>().speed = velocity;
     }
 

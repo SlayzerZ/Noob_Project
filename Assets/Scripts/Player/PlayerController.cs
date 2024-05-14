@@ -15,10 +15,9 @@ public abstract class PlayerController : MonoBehaviour
     public Mouvement movement;
     [HideInInspector] public int Jump = 0;
     [HideInInspector] public Rigidbody2D rd;
+    public AudioClip jumpClip;
 
-    public bool isAccrocher = false;
-
-    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2, bool isAccrocher)
+    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2, AudioClip jumpClip)
     {
         this.anim = anim;
         this.jumpForce = jumpForce;
@@ -31,7 +30,7 @@ public abstract class PlayerController : MonoBehaviour
         Jump = jump;
         this.rd = rd;
         this.jumpForce2 = jumpForce2;
-        this.isAccrocher = isAccrocher;
+        this.jumpClip = jumpClip;
     }
 
     public static PlayerController Instance;

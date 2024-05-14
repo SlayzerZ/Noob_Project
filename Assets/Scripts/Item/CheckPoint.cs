@@ -6,6 +6,7 @@ public class CheckPoint : MonoBehaviour
 {
     private Transform playerSpawn;
     private Animator animator;
+    public AudioClip check;
 
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class CheckPoint : MonoBehaviour
                 }
             }
             animator.SetTrigger("Checkpoint");
+            AudioManager.Instance.playAtPoint(check,transform.position);
             playerSpawn.position = transform.position;
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
         }

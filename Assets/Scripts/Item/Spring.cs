@@ -6,7 +6,7 @@ public class Spring : MonoBehaviour
 {
     private Animator m_Animator;
     public float powerBounce;
-
+    public AudioClip sound;
     private void Start()
     {
         m_Animator = transform.parent.GetComponent<Animator>();
@@ -16,6 +16,7 @@ public class Spring : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             m_Animator.SetTrigger("Bounce");
+            AudioManager.Instance.playAtPoint(sound,transform.position);
             collision.GetComponent<Rigidbody2D>().AddForce(Vector2.up * powerBounce);
         }
     }

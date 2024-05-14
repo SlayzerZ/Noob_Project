@@ -9,7 +9,7 @@ public class SonicController : PlayerController
 {
     public ControlMapSonic mapSonic;
     public Transform camerad;
-    public bool ss;
+    [HideInInspector] public bool ss;
     private bool ground = false;
     private bool HasJump = false;
     private bool aDroite = false;
@@ -18,15 +18,15 @@ public class SonicController : PlayerController
     private float timeOffset;
 
     public SonicController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
-        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2, bool isAccrocher) 
-        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2, isAccrocher)
+        bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2, AudioClip jumpClip) 
+        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2, jumpClip)
     {
     }
 
 
     public void handleAccrocher()
     {
-        isAccrocher = true;
+       // isAccrocher = true;
     }
 
     protected override void Awake()
@@ -138,26 +138,12 @@ public class SonicController : PlayerController
        
     }
 
-    private void HandlePause(InputAction.CallbackContext obj)
-    {
-        if (IsGamePause)
-        {
-            IsGamePause = false;
-            Time.timeScale = 1;
-
-        }
-        else
-        {
-            IsGamePause = true;
-            Time.timeScale = 0f;
-        }
-    }
-
     private void JumpAction(InputAction.CallbackContext obj)
     {
         Jump += 1;
         if (ground)
         {
+            AudioManager.Instance.playAtPoint(jumpClip,transform.position);
             HasJump = true;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
         }
@@ -166,7 +152,6 @@ public class SonicController : PlayerController
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce2));
         }
-      //  Debug.Log("HasJump : " + HasJump);
     }
     /*private void OnDrawGizmos()
     {

@@ -14,6 +14,8 @@ public class SonicAttack : SpecialAttack
     public float ManaUAA;
     public float ManaDAA;
     private SonicController controller;
+    private PlayerHealthSonic healthSonic;
+    public AudioClip attacksound;
 
     public SonicAttack(float maxMana, float currentMana, Bar manaBar, float laserLength, float laserRadius, float attackDelay, LayerMask layerMask, Animator anim, BoxCollider2D bCol2d, float velocity, float JF, bool attack) : base(maxMana, currentMana, manaBar,laserLength, laserRadius, attackDelay, layerMask, anim, bCol2d, velocity, JF, attack)
     {
@@ -24,6 +26,7 @@ public class SonicAttack : SpecialAttack
     {
         base.Start();
         controller = GetComponent<SonicController>();
+        healthSonic = GetComponent<PlayerHealthSonic>();
         controller.mapSonic.Platform.Special.performed += SpecialAttack;
       //  controller.mapSonic.Combat
     }
@@ -31,7 +34,7 @@ public class SonicAttack : SpecialAttack
     // Update is called once per frame
     void Update()
     {
-
+       // SGAtouch();
     }
 
     void SpecialAttack(InputAction.CallbackContext obj)
@@ -98,8 +101,19 @@ public class SonicAttack : SpecialAttack
     void SGAtouch() 
     {
         //Start point of the laser
-        Vector2 startPosition = (Vector2)transform.position - new Vector2(-bCol2d.bounds.extents.x, 0);
-        RaycastHit2D hit = Physics2D.Raycast(startPosition, Vector2.right, laserLength, layerMask.value);
+        float limit;
+        Vector2 direction;
+        if (transform.localScale.x >= 0)
+        {
+            limit = -bCol2d.bounds.extents.x;
+            direction = Vector2.right;
+        } else
+        {
+            limit = bCol2d.bounds.extents.x;
+            direction = Vector2.left;
+        }
+        Vector2 startPosition = (Vector2)transform.position - new Vector2(limit, 0);
+        RaycastHit2D hit = Physics2D.Raycast(startPosition, direction, laserLength, layerMask.value);
         //The color of the ray for debug purpose
         Color rayColor = Color.red;
         //If the object is not null
@@ -116,12 +130,11 @@ public class SonicAttack : SpecialAttack
 
         }
         //Draw the ray for debug purpose
-        Debug.DrawRay(startPosition, Vector2.right * laserLength, rayColor);
+        Debug.DrawRay(startPosition, direction * laserLength, rayColor);
     }
-    public Vector2 sphereDir;
+  //  public Vector2 sphereDir;
     void SAAtouch(float radius, Vector2 direction)
     {
-        sphereDir = direction;
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, radius, direction, 0f, layerMask);
         if (hit.collider != null)
         {
@@ -137,6 +150,7 @@ public class SonicAttack : SpecialAttack
         controller.speed = 0;
         controller.jumpForce = 0;
         attack = true;
+        AudioManager.Instance.playAtPoint(attacksound,transform.position);
         while (attack)
         {
             SGAtouch();
@@ -157,6 +171,7 @@ public class SonicAttack : SpecialAttack
         anim.SetBool("DownGroundAttack", true);
         controller.speed = 0;
         attack = true;
+        //AudioManager.Instance.playAtPoint(attacksound, transform.position);
         yield return new WaitForSeconds(1f);
         GetComponent<Rigidbody2D>().AddForce(new Vector2(1500 * transform.localScale.x, 0));
         while (attack)
@@ -179,13 +194,10 @@ public class SonicAttack : SpecialAttack
         controller.speed = 0;
         controller.ss = true;
         anim.SetBool("SS", controller.ss);
+        //AudioManager.Instance.playAtPoint(attacksound, transform.position);
         yield return new WaitForSeconds(1f);
+        healthSonic.isInvincible = true;
         controller.speed = velocity;
-        while (controller.ss)
-        {
-            SAAtouch(laserRadius, transform.position);
-            yield return new WaitForSeconds(attackDelay);
-        }
     }
     private IEnumerator upAttackGround()
     {
@@ -196,6 +208,7 @@ public class SonicAttack : SpecialAttack
             if (currentMana == 0)
             {
                 controller.ss = false;
+                healthSonic.isInvincible = false;
                 anim.SetBool("SS", controller.ss);
                 break;
             }
@@ -207,6 +220,7 @@ public class SonicAttack : SpecialAttack
         anim.SetBool("SideAerialAttack", true);
         controller.jumpForce = 0;
         attack = true;
+        AudioManager.Instance.playAtPoint(attacksound, transform.position);
         GetComponent<Rigidbody2D>().AddForce(new Vector2(300 * transform.localScale.x,0));
         yield return new WaitForSeconds(1f);
         while (attack)
@@ -228,6 +242,7 @@ public class SonicAttack : SpecialAttack
         anim.SetTrigger("DownAerialAttack");
         controller.speed = 0;
         controller.Jump = 1;
+        AudioManager.Instance.playAtPoint(attacksound, transform.position);
         yield return new WaitForSeconds(1f);
         GetComponent<Rigidbody2D>().AddForce(Vector2.down * 500);
         while (!controller.Grounded())
@@ -241,6 +256,7 @@ public class SonicAttack : SpecialAttack
     private IEnumerator UpAttackAerial()
     {
         anim.SetTrigger("UpAerialSpecial");
+        AudioManager.Instance.playAtPoint(attacksound, transform.position);
         controller.Jump = 1;
         yield return new WaitForSeconds(1f);
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * (controller.jumpForce * 3));

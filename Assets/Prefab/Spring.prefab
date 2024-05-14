@@ -90,7 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2becc2312d94aee48bcac02a538c7250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerBounce: 0
+  powerBounce: 6600
+  sound: {fileID: 8300000, guid: 6fd1ae4ed0ae5db43bf1e56c0cfa017b, type: 3}
 --- !u!1 &8797121749122550305
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +168,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1575601129, guid: dc75d79a79302e24198855e68eb9c409, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
