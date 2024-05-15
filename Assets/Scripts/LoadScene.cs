@@ -31,4 +31,9 @@ public class LoadScene : MonoBehaviour
         }
         SceneManager.LoadScene(SceneName);
     }
+
+    public void toMainMenu()
+    {
+        StartCoroutine(LoadNextScene());
+    }
 }

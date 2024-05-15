@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level02_Sonic.unity
     guid: 10ac70dbae20d3943b02a2c3706d53f6
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: cf964f2b9935c0148a981608bce63ec9
   m_configObjects: {}

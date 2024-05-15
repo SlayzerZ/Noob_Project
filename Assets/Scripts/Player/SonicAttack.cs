@@ -28,6 +28,7 @@ public class SonicAttack : SpecialAttack
         controller = GetComponent<SonicController>();
         healthSonic = GetComponent<PlayerHealthSonic>();
         controller.mapSonic.Platform.Special.performed += SpecialAttack;
+        controller.mapSonic.SuperSonic.Special.performed += SSAttack;
       //  controller.mapSonic.Combat
     }
 
@@ -196,6 +197,10 @@ public class SonicAttack : SpecialAttack
         anim.SetBool("SS", controller.ss);
         //AudioManager.Instance.playAtPoint(attacksound, transform.position);
         yield return new WaitForSeconds(1f);
+        controller.mapSonic.Platform.Disable();
+        controller.mapSonic.SuperSonic.Enable();
+        //  controller.rd.bodyType = RigidbodyType2D.Kinematic;
+        controller.rd.gravityScale = 0;
         healthSonic.isInvincible = true;
         controller.speed = velocity;
     }
@@ -210,6 +215,9 @@ public class SonicAttack : SpecialAttack
                 controller.ss = false;
                 healthSonic.isInvincible = false;
                 anim.SetBool("SS", controller.ss);
+                controller.rd.gravityScale = 1;
+                controller.mapSonic.SuperSonic.Disable();
+                controller.mapSonic.Platform.Enable();
                 break;
             }
         }
@@ -267,5 +275,40 @@ public class SonicAttack : SpecialAttack
        /* Gizmos.DrawSphere(transform.position, laserRadius);
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(transform.position + (Vector3)Vector2.down * 10 , laserRadius);*/
+    }
+
+    private void SSAttack(InputAction.CallbackContext obj)
+    {
+        if (controller.movement.Movement.Movement.ReadValue<Vector2>().x != 0)
+        {
+            StartCoroutine(SSsattack());
+            StartCoroutine(sssattack());
+        } else
+        {
+
+        }
+    }
+
+    private IEnumerator SSsattack()
+    {
+        anim.SetBool("SSsattack", true);
+       // controller.speed = 0;
+        //controller.jumpForce = 0;
+        attack = true;
+       // AudioManager.Instance.playAtPoint(attacksound, transform.position);
+        while (attack)
+        {
+            SGAtouch();
+            yield return new WaitForSeconds(attackDelay);
+        }
+        anim.SetBool("SSsattack", false);
+        // controller.speed = velocity;
+        //controller.jumpForce = JF;
+    }
+
+    private IEnumerator sssattack()
+    {
+        yield return new WaitForSeconds(2f);
+        attack = false;
     }
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7545667357873960687}
   - component: {fileID: 1555477620133881893}
   - component: {fileID: 3958699592696173131}
+  - component: {fileID: 4678308036773961170}
   m_Layer: 9
   m_Name: Mon
   m_TagString: Untagged
@@ -134,7 +135,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.044999998, y: 0.145}
+    - - {x: -0.041334838, y: 0.13400966}
       - {x: -0.175, y: 0.085}
       - {x: -0.175, y: -0.105}
       - {x: -0.16499999, y: -0.145}
@@ -168,7 +169,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!95 &7545667357873960687
 Animator:
   serializedVersion: 5
@@ -205,6 +206,7 @@ MonoBehaviour:
   speed: 0
   spriteRenderer: {fileID: 8200851839405673634}
   damage: 3
+  screaming: {fileID: 8300000, guid: 3e7589d52437cf54e96fe5743e3d27be, type: 3}
 --- !u!114 &3958699592696173131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +221,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   obj: {fileID: 247380018113398489}
+--- !u!82 &4678308036773961170
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247380018113398489}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -5621712932526419213, guid: befdec4dcf0e7fc468e3070a51d1ec2b, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 3e7589d52437cf54e96fe5743e3d27be, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 18
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2884084532820031867
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyObject: {fileID: 247380018113398489}
   bounce: 800
+  rmana: 3
+  death: {fileID: 8300000, guid: fee60af847d6bd74e8cadc24402db33e, type: 3}
 --- !u!60 &5472031705177001058
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -310,8 +410,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.14857481, y: 0.13665761}
-      - {x: -0.20308292, y: 0.06652337}
+    - - {x: -0.11560363, y: 0.12127104}
+      - {x: -0.16718204, y: 0.08630621}
       - {x: -0.113044575, y: 0.09606441}
       - {x: 0.17451942, y: 0.010679637}
       - {x: 0.15808164, y: 0.19082007}

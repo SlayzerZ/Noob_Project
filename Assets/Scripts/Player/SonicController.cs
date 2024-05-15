@@ -13,9 +13,9 @@ public class SonicController : PlayerController
     private bool ground = false;
     private bool HasJump = false;
     private bool aDroite = false;
-    private bool IsGamePause = false;
     private float Posty;
     private float timeOffset;
+    private Vector2 zero = Vector2.zero;
 
     public SonicController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
         bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2, AudioClip jumpClip) 
@@ -84,7 +84,14 @@ public class SonicController : PlayerController
         if (!IsClimbing)
         {
             float velocity = x * speed;
-            rd.AddForce(new Vector2(velocity, 0)*Time.deltaTime);
+            if (!ss)
+            {
+                rd.AddForce(new Vector2(velocity, 0)*Time.deltaTime);
+            }
+            else
+            {
+                rd.velocity = Vector2.SmoothDamp(rd.velocity, new Vector2(velocity / 200, (y * speed) /200),ref zero,0.05f);
+            }
         }
         anim.SetFloat("Speed", Mathf.Abs(rd.velocity.x));
         if (x < 0 && !aDroite)

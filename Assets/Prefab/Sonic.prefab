@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6550378323326076479}
   - component: {fileID: 3001670610998645018}
   - component: {fileID: 8795118311563120432}
+  - component: {fileID: 4504006434582459999}
   m_Layer: 3
   m_Name: Sonic
   m_TagString: Player
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1602396439, guid: 14d324d7706c7904dad603fe494656c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -197,12 +198,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6550378323326076466}
   jumpForce: 1000
+  jumpForce2: 800
   speed: 5000
   laserLength: 0.1
+  bCol2d: {fileID: 0}
   IsClimbing: 0
   Jump: 0
-  jumpForce2: 800
+  rd: {fileID: 0}
+  jumpClip: {fileID: 8300000, guid: 1e0d33ff63fdccb45bbd8ef750253636, type: 3}
   camerad: {fileID: 0}
+  ss: 0
 --- !u!114 &3001670610998645018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,8 +224,14 @@ MonoBehaviour:
   currentHealth: 0
   invicibilityTime: 3
   invicibilityFlashDelay: 0.2
+  maxLife: 9
+  startLife: 3
   healthBar: {fileID: 0}
+  lifeCount: {fileID: 0}
+  damageSound: {fileID: 8300000, guid: 7dbd03bb65c77254bbc4854b87597d97, type: 3}
+  deathSound: {fileID: 8300000, guid: 6e1600d676822f34a87fdb6d62c93987, type: 3}
   graphics: {fileID: 6550378323326076467}
+  isInvincible: 0
 --- !u!114 &8795118311563120432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,8 +244,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae8dda722950b34c80668fd360e6460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxMana: 10
+  currentMana: 0
+  manaBar: {fileID: 0}
   laserLength: 0.6
+  laserRadius: 1
   attackDelay: 0.002
   layerMask:
     serializedVersion: 2
     m_Bits: 512
+  ManaSGA: 5
+  ManaUGA: 10
+  ManaDGA: 3
+  ManaSAA: 5
+  ManaUAA: 2
+  ManaDAA: 3
+  attacksound: {fileID: 8300000, guid: bd151e133a35b5d4193f3ab00cba4624, type: 3}
+--- !u!81 &4504006434582459999
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6550378323326076469}
+  m_Enabled: 1
