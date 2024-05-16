@@ -10,7 +10,7 @@ public abstract class PlayerHealth : MonoBehaviour
     public float invicibilityFlashDelay = 0.2f;
     public int maxLife = 9;
     public int startLife = 3;
-    protected int currentLife = 1;
+    public int currentLife = 1;
     public Bar healthBar;
     public LifeCount lifeCount;
     public AudioClip damageSound;
@@ -19,11 +19,11 @@ public abstract class PlayerHealth : MonoBehaviour
     [HideInInspector] public bool isInvincible = false;
     protected float velocity;
     protected bool ground;
-    private Animator animator;
-    private Transform playerSpawn;
+    protected Animator animator;
     private Animator fadeSys;
+    private Rigidbody2D rd;
 
-    public PlayerHealth(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, Bar healthBar, SpriteRenderer graphics, float velocity, bool ground, bool isInvincible)
+    public PlayerHealth(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, Bar healthBar, SpriteRenderer graphics, float velocity, bool ground, bool isInvincible, Animator animator)
     {
         this.maxHealth = maxHealth;
         this.currentHealth = currentHealth;
@@ -37,13 +37,14 @@ public abstract class PlayerHealth : MonoBehaviour
         this.velocity = velocity;
         this.ground = ground;
         this.isInvincible = isInvincible;
+        this.animator = animator;
     }
 
     public static PlayerHealth Instance;
 
     private void Awake()
     {
-        playerSpawn = GameObject.FindGameObjectWithTag("PlayerSpawn").transform;
+        rd = GetComponent<Rigidbody2D>();
         fadeSys = GameObject.FindGameObjectWithTag("FadeSys").GetComponent<Animator>();
         if (Instance != null)
         {
@@ -51,18 +52,19 @@ public abstract class PlayerHealth : MonoBehaviour
             return;
         }
         Instance = this;
+        
     }
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
         currentHealth = maxHealth;
-        currentLife = startLife;
         healthBar.setMaxHealth(maxHealth);
-        lifeCount.setLife(currentLife);
         velocity = GetComponent<PlayerController>().speed;
         animator = GetComponent<Animator>();
         animator.SetInteger("Life", currentLife-1);
+        currentLife = startLife;
+        lifeCount.setLife(currentLife);
     }
 
     // Update is called once per frame
@@ -81,6 +83,7 @@ public abstract class PlayerHealth : MonoBehaviour
                 currentHealth = 0;
             } else
             {
+                rd.AddForce(new Vector2(-transform.localScale.x,600));
                 AudioManager.Instance.playAtPoint(damageSound, transform.position);
                 currentHealth -= damage;
             }
@@ -178,7 +181,7 @@ public abstract class PlayerHealth : MonoBehaviour
         animator.SetInteger("Life", currentLife-1);
         healthBar.setMaxHealth(maxHealth);
         currentHealth = maxHealth;
-        transform.position = playerSpawn.position;
+        transform.position = LevelManager.Instance.respawnPoint;
     }
 
 }

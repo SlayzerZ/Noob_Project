@@ -261,4 +261,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level02_Sonic
-  FadeSys: {fileID: 0}
+  Menu: 0
+  levelR: 2

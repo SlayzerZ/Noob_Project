@@ -20,11 +20,6 @@ public abstract class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    // Update is called once per frame
-    protected virtual void Update()
-    {
-    }
-
     public virtual void TakeDamage(int damage)
     {
             if (currentHealth - damage <= 0)

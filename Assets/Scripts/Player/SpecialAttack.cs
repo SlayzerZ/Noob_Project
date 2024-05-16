@@ -44,6 +44,7 @@ public abstract class SpecialAttack : MonoBehaviour
             return;
         }
         Instance = this;
+        manaBar.setMaxMana(maxMana);
     }
     protected virtual void Start()
     {
@@ -51,7 +52,7 @@ public abstract class SpecialAttack : MonoBehaviour
         bCol2d = GetComponent<BoxCollider2D>();
         velocity = GetComponent<PlayerController>().speed;
         JF = GetComponent<PlayerController>().jumpForce;
-        manaBar.setMaxMana(maxMana);
+        
     }
 
     public void DrainMana(float amount)

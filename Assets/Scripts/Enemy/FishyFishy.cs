@@ -10,12 +10,6 @@ public class FishyFishy : Enemy
     {
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -29,10 +23,7 @@ public class FishyFishy : Enemy
 
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Player"))
-        {
-            PlayerHealth.Instance.TakeDamage(damage);
-        } else if (collision.gameObject.layer == LayerMask.GetMask("Ground"))
+        if (collision.gameObject.layer == LayerMask.GetMask("Ground"))
         {
             transform.GetComponent<PolygonCollider2D>().isTrigger = true;
         }

@@ -5,15 +5,16 @@ using UnityEngine;
 public class PlayerHealthSonic : PlayerHealth
 {
     public PlayerHealthSonic(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, Bar healthBar,
-    SpriteRenderer graphics, float velocity, bool ground, bool isInvincible) : base(maxHealth, currentHealth, invicibilityTime, invicibilityFlashDelay, maxLife, startLife, currentLife, healthBar, graphics,velocity,ground,isInvincible) { }
+    SpriteRenderer graphics, float velocity, bool ground, bool isInvincible, Animator animator) : base(maxHealth, currentHealth, invicibilityTime, invicibilityFlashDelay, maxLife, startLife, currentLife, healthBar, graphics,velocity,ground,isInvincible, animator) { }
 
     protected override void Start()
     {
         base.Start();
     }
 
-    protected override void Update()
+    public override void TakeDamage(int damage)
     {
-       // Debug.Log(ground);
+        base.TakeDamage(damage);
+        animator.SetBool("SideAerialAttack", false);
     }
 }

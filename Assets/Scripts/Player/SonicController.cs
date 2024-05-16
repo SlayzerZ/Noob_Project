@@ -17,9 +17,9 @@ public class SonicController : PlayerController
     private float timeOffset;
     private Vector2 zero = Vector2.zero;
 
-    public SonicController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
+    public SonicController(string Name,Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform,
         bool IsClimbing, Mouvement movement, int Jump, Rigidbody2D rd, float jumpForce2, AudioClip jumpClip) 
-        : base(anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2, jumpClip)
+        : base(Name,anim, jumpForce, speed, laserLength, bCol2d, currentPlatform, IsClimbing, movement, Jump, rd, jumpForce2, jumpClip)
     {
     }
 
@@ -41,7 +41,6 @@ public class SonicController : PlayerController
             mapSonic.Platform.Enable();
         }
         mapSonic.Platform.Jump.performed += JumpAction;
-       // mapSonic.Platform.Pause.performed += HandlePause;
     }
 
     // Start is called before the first frame update

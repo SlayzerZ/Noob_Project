@@ -16,6 +16,9 @@ public class SonicAttack : SpecialAttack
     private SonicController controller;
     private PlayerHealthSonic healthSonic;
     public AudioClip attacksound;
+    public GameObject projectile;
+    public float ps;
+    private CircleCollider2D circleCollider;
 
     public SonicAttack(float maxMana, float currentMana, Bar manaBar, float laserLength, float laserRadius, float attackDelay, LayerMask layerMask, Animator anim, BoxCollider2D bCol2d, float velocity, float JF, bool attack) : base(maxMana, currentMana, manaBar,laserLength, laserRadius, attackDelay, layerMask, anim, bCol2d, velocity, JF, attack)
     {
@@ -29,6 +32,7 @@ public class SonicAttack : SpecialAttack
         healthSonic = GetComponent<PlayerHealthSonic>();
         controller.mapSonic.Platform.Special.performed += SpecialAttack;
         controller.mapSonic.SuperSonic.Special.performed += SSAttack;
+        circleCollider = GetComponentInChildren<CircleCollider2D>();
       //  controller.mapSonic.Combat
     }
 
@@ -136,7 +140,7 @@ public class SonicAttack : SpecialAttack
   //  public Vector2 sphereDir;
     void SAAtouch(float radius, Vector2 direction)
     {
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, radius, direction, 0f, layerMask);
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, radius, direction, 1f, layerMask);
         if (hit.collider != null)
         {
             if (hit.collider.transform !=  null)
@@ -226,6 +230,7 @@ public class SonicAttack : SpecialAttack
     private IEnumerator SideAttackAerial()
     {
         anim.SetBool("SideAerialAttack", true);
+        //anim.SetTrigger("SideAerialAttack");
         controller.jumpForce = 0;
         attack = true;
         AudioManager.Instance.playAtPoint(attacksound, transform.position);
@@ -233,10 +238,10 @@ public class SonicAttack : SpecialAttack
         yield return new WaitForSeconds(1f);
         while (attack)
         {
-            SAAtouch(laserRadius, transform.position);
+           // SAAtouch(laserRadius+1, Vector3.zero);
             yield return new WaitForSeconds(attackDelay);
         }
-        anim.SetBool("SideAerialAttack", false);
+       anim.SetBool("SideAerialAttack", false);
         controller.jumpForce = JF;
     }
     private IEnumerator sideAttackAerial()
@@ -270,12 +275,12 @@ public class SonicAttack : SpecialAttack
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * (controller.jumpForce * 3));
     }
 
-    private void OnDrawGizmosSelected()
+    /*private void OnDrawGizmosSelected()
     {
-       /* Gizmos.DrawSphere(transform.position, laserRadius);
+        Gizmos.DrawWireSphere(transform.position + Vector3.zero, laserRadius +1);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position + (Vector3)Vector2.down * 10 , laserRadius);*/
-    }
+        Gizmos.DrawSphere(transform.position + (Vector3)Vector2.down * 10, laserRadius);
+    }*/
 
     private void SSAttack(InputAction.CallbackContext obj)
     {
@@ -285,8 +290,15 @@ public class SonicAttack : SpecialAttack
             StartCoroutine(sssattack());
         } else
         {
-
+            anim.SetTrigger("SSiattack");
+            SonicWave();
         }
+    }
+
+    private void SonicWave()
+    {
+        projectile.GetComponent<SonicWave>().Settings(ps, Vector2.right * transform.localScale.x);
+        Instantiate(projectile, transform.position, Quaternion.identity);
     }
 
     private IEnumerator SSsattack()
@@ -310,5 +322,16 @@ public class SonicAttack : SpecialAttack
     {
         yield return new WaitForSeconds(2f);
         attack = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (circleCollider.enabled)
+        {
+            if (collision.gameObject.layer == 9)
+            {
+                collision.GetComponent<EnemyHealth>().TakeDamage(50);
+            }
+        } 
     }
 }

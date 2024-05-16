@@ -7,6 +7,8 @@ public class BeebotPatrol : Enemy
     public Transform[] waypoints;
     private Transform target;
     private int destPoints = 0;
+    private bool playerDetected;
+    private Animator animator;
 
     public BeebotPatrol(float speed, SpriteRenderer spriteRenderer, int damage) : base(speed, spriteRenderer, damage)
     {
@@ -16,6 +18,7 @@ public class BeebotPatrol : Enemy
     void Start()
     {
         target = waypoints[0];
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,11 +26,87 @@ public class BeebotPatrol : Enemy
     {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime,Space.World);
-        if (Vector3.Distance(transform.position, target.position) < 0.3f)
+        if (playerDetected)
         {
-            destPoints = (destPoints + 1) % waypoints.Length;
+            if (Vector3.Distance(transform.position, target.position) < 0.3f)
+            {
+                animator.SetTrigger("Attack");
+            }
+        } else
+        {
+            if (Vector3.Distance(transform.position, target.position) < 0.3f)
+            {
+                destPoints = (destPoints + 1) % waypoints.Length;
+                target = waypoints[destPoints];
+                if (target.position.x - transform.position.x > 0)
+                {
+                    if (!spriteRenderer.flipX)
+                    {
+                        spriteRenderer.flipX = true;
+                    }
+                }
+                else if (target.position.x - transform.position.x < 0)
+                {
+                    if (spriteRenderer.flipX)
+                    {
+                        spriteRenderer.flipX = false;
+                    }
+                }
+            }
+        } 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerDetected = true;
+            target = collision.transform;
+            if (collision.transform.position.x - transform.position.x > 0)
+            {
+                if (!spriteRenderer.flipX)
+                {
+                    spriteRenderer.flipX = true;
+                }
+            }
+            else if (collision.transform.position.x - transform.position.x < 0)
+            {
+                if (spriteRenderer.flipX)
+                {
+                    spriteRenderer.flipX = false;
+                }
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerDetected = false;
             target = waypoints[destPoints];
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+            if (target.position.x - transform.position.x > 0)
+            {
+                if (!spriteRenderer.flipX)
+                {
+                    spriteRenderer.flipX = true;
+                }
+            }
+            else if (target.position.x - transform.position.x < 0)
+            {
+                if (spriteRenderer.flipX)
+                {
+                    spriteRenderer.flipX = false;
+                }
+            }
         }
     }
 }

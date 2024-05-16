@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 580a3dd4a6f44914d8e2b4c9641925a4
   - enabled: 1
+    path: Assets/Scenes/Tuto_Sonic.unity
+    guid: b66214893c6355c40ad892268581d16b
+  - enabled: 1
     path: Assets/Scenes/Level01_Sonic.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level02_Sonic.unity
-    guid: 10ac70dbae20d3943b02a2c3706d53f6
+    guid: 78a37babf5fb2d646861c91974d957a2
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: cf964f2b9935c0148a981608bce63ec9

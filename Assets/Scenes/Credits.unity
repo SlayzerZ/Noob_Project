@@ -454,7 +454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.5175, y: -93}
+  m_AnchoredPosition: {x: 4.5175, y: 377}
   m_SizeDelta: {x: 223.54, y: 83.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283454278
@@ -763,8 +763,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000019073, y: -970.39}
-  m_SizeDelta: {x: 436.3, y: 1940.8}
+  m_AnchoredPosition: {x: 0.000019073, y: -1167.84}
+  m_SizeDelta: {x: 436.3, y: 2335.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831345903
 MonoBehaviour:
@@ -859,14 +859,28 @@ MonoBehaviour:
     <Size=35>Ripped
     Assets</Size>
 
-    Daniel Sydney (Sonic)
+    Daniel Sydney (Sonic Sprites)
+
+    QuadFactor (Sonic Wave
+    Sprites)
 
     Tippboyy (Item)
 
-    Techokami
-    (UI)
+    Techokami (UI)
 
     Brackeys Team (UI)
+
+    Mr
+    Lange (Sound Effects)
+
+    Turtle 474 (Badnik)
+
+    Shadowbot (Leaf Forest assets)
+
+    Dioxaz
+    (DashPad & Flag)
+
+    Ice (Spike)
 
 
     <Size=35>Music</Size>
@@ -908,9 +922,31 @@ MonoBehaviour:
     THE COLLECTORS
 
 
+    <Size=30>[Leaf
+    Forest]</Size>
 
-    Thank
-    You For Playing !'
+    From Sonic Advance 2
+
+    Teruhiko Nakagawa
+
+
+    <Size=30>[Story
+    Select]</Size>
+
+    From Sonic Adventure 2
+
+    Jun Senoue
+
+    Kenichi Tokoi
+
+    Fumie
+    Kumatani
+
+    Tomoya Ohtani
+
+
+
+    Thank You For Playing !'
 --- !u!222 &831345904
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1025,11 +1061,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4755339138342633116, guid: 1fa61080a6c78f244acd752dfa569346, type: 3}
   m_PrefabInstance: {fileID: 855021412}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &855021414 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5680987641572849610, guid: 1fa61080a6c78f244acd752dfa569346, type: 3}
-  m_PrefabInstance: {fileID: 855021412}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &969252019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.0275, y: 203}
+  m_AnchoredPosition: {x: 0.000011444, y: 652}
   m_SizeDelta: {x: 220.54, y: 112.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &969252021
@@ -1323,8 +1354,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 218.28009, y: -970.39}
-  m_SizeDelta: {x: 436.3, y: 1940.77}
+  m_AnchoredPosition: {x: 218.15, y: -1425.3999}
+  m_SizeDelta: {x: 436.3, y: 2850.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429965559
 MonoBehaviour:
@@ -1372,7 +1403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: MainMenu
-  FadeSys: {fileID: 855021414}
   Menu: 0
 --- !u!1 &1667459133
 GameObject:
@@ -1408,7 +1438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.0225, y: 70}
+  m_AnchoredPosition: {x: 6.0225, y: 510}
   m_SizeDelta: {x: 220.53, y: 94.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667459135

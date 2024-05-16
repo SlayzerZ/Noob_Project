@@ -22,4 +22,12 @@ public abstract class Enemy : MonoBehaviour
             PlayerHealth.Instance.TakeDamage(damage);
         }
     }
+
+    protected virtual void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            PlayerHealth.Instance.TakeDamage(damage);
+        }
+    }
 }

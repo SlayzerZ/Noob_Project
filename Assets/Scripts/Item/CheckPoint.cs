@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    private Transform playerSpawn;
     private Animator animator;
     public AudioClip check;
 
     private void Awake()
     {
-        playerSpawn = GameObject.FindGameObjectWithTag("PlayerSpawn").transform;
         animator = GetComponent<Animator>();
     }
 
@@ -18,16 +16,9 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (playerSpawn.childCount > 0)
-            {
-                for (int i = 0; i < playerSpawn.childCount; i++)
-                {
-                    Destroy(playerSpawn.GetChild(i).gameObject);
-                }
-            }
             animator.SetTrigger("Checkpoint");
             AudioManager.Instance.playAtPoint(check,transform.position);
-            playerSpawn.position = transform.position;
+            LevelManager.Instance.respawnPoint = transform.position;
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
         }
     }

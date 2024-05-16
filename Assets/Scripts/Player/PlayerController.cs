@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public abstract class PlayerController : MonoBehaviour
 {
+    public string Name;
     public Animator anim;
     public float jumpForce = 0;
     public float jumpForce2 = 0;
@@ -17,8 +19,9 @@ public abstract class PlayerController : MonoBehaviour
     [HideInInspector] public Rigidbody2D rd;
     public AudioClip jumpClip;
 
-    protected PlayerController(Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2, AudioClip jumpClip)
+    protected PlayerController(string Name,Animator anim, float jumpForce, float speed, float laserLength, BoxCollider2D bCol2d, Collider2D currentPlatform, bool isClimbing, Mouvement movement, int jump, Rigidbody2D rd, float jumpForce2, AudioClip jumpClip)
     {
+        this.Name = Name;
         this.anim = anim;
         this.jumpForce = jumpForce;
         this.speed = speed;
@@ -52,6 +55,13 @@ public abstract class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         bCol2d = GetComponent<BoxCollider2D>();
         rd = GetComponent<Rigidbody2D>();
+        if (!File.Exists(SaveData.Instance.savePath()))
+        {
+            SaveData.Instance.CreateDefaultSaveFile(Name);
+        } else
+        {
+            SaveData.Instance.loadData();
+        }
     }
     //public float offset;
     public virtual bool Grounded()
