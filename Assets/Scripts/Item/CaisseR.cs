@@ -13,7 +13,7 @@ public class CaisseR : MonoBehaviour
             AudioManager.Instance.playAtPoint(sound,transform.position);
             Inventory.Instance.AddCoins(rings);
             Destroy(gameObject);
-            collision.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1500);
+            collision.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 700);
         }
     }
 }

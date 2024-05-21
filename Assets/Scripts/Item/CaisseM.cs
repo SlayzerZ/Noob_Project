@@ -13,7 +13,7 @@ public class CaisseM : MonoBehaviour
             AudioManager.Instance.playAtPoint(sound, transform.position);
             SpecialAttack.Instance.RegenMana(Mana);
             Destroy(gameObject);
-            collision.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1500);
+            collision.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 700);
         }
     }
 }

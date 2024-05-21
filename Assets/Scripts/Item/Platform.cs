@@ -56,9 +56,5 @@ public class Platform : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         collision.transform.SetParent(null);
-        if (collision.transform.CompareTag("Player"))
-        {
-            DontDestroyOnLoad(collision.gameObject);
-        }
     }
 }

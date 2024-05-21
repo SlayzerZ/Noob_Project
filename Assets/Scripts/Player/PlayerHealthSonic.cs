@@ -15,6 +15,9 @@ public class PlayerHealthSonic : PlayerHealth
     public override void TakeDamage(int damage)
     {
         base.TakeDamage(damage);
-        animator.SetBool("SideAerialAttack", false);
+        if (!isInvincible)
+        {
+            animator.SetBool("SideAerialAttack", false);
+        }
     }
 }

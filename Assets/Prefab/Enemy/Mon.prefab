@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1068907552, guid: d8e89c770ca1cea4ca37a108b48a2590, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  death: {fileID: 8300000, guid: fee60af847d6bd74e8cadc24402db33e, type: 3}
   obj: {fileID: 247380018113398489}
 --- !u!82 &4678308036773961170
 AudioSource:

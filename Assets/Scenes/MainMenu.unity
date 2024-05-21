@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd12787f30876543984fa3eec1fd540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: Level01_Sonic
+  LevelToLoad: LevelSelect
   settingsWindows: {fileID: 874844585}
 --- !u!114 &2030572572
 MonoBehaviour:

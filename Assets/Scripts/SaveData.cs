@@ -25,14 +25,15 @@ public class SaveData : MonoBehaviour
     }
     public void CreateDefaultSaveFile(string chara)
     {
+
         Directory.CreateDirectory(_folder);
         XDocument saveFile = new(
             new XElement("Root",
             new XElement(chara,
             new XElement("Health", "100"),
-            new XElement("Coins", Inventory.Instance.coinsCount),
+            new XElement("Coins", "0"),
             new XElement("Life", "3"),
-            new XElement("Mana", SpecialAttack.Instance.currentMana),
+            new XElement("Mana", "0"),
             new XElement("LevelReached", 1)
             ))
         );
@@ -77,12 +78,10 @@ public class SaveData : MonoBehaviour
     {
        // PlayerHealth.Instance.currentHealth = int.Parse(XmlReader(PlayerController.Instance.Name, "Health"));
         Inventory.Instance.coinsCount = int.Parse(XmlReader(PlayerController.Instance.Name, "Coins"));
-        PlayerHealth.Instance.currentLife = int.Parse(XmlReader(PlayerController.Instance.Name, "Life"));
-        SpecialAttack.Instance.currentMana = float.Parse(XmlReader(PlayerController.Instance.Name, "Mana"));
-       // PlayerHealth.Instance.healthBar.setHealth(PlayerHealth.Instance.currentHealth);
+        PlayerHealth.Instance.SetLife(int.Parse(XmlReader(PlayerController.Instance.Name, "Life")));
+        SpecialAttack.Instance.SetMana(float.Parse(XmlReader(PlayerController.Instance.Name, "Mana")));
         Inventory.Instance.Updateui();
-        PlayerHealth.Instance.lifeCount.setLife(PlayerHealth.Instance.currentLife);
-        SpecialAttack.Instance.manaBar.setMana(SpecialAttack.Instance.currentMana);
+       // PlayerHealth.Instance.healthBar.setHealth(PlayerHealth.Instance.currentHealth);
     }
 
     public string XmlReader(string chara,string element)//Lecteur d'element xml
@@ -97,7 +96,10 @@ public class SaveData : MonoBehaviour
             {
                 return Element.Value;
             }
-        }
+        } else
+        {
+            XmlWriter(chara, element, "0");
+        } 
         return "0";
     }
 
@@ -122,10 +124,10 @@ public class SaveData : MonoBehaviour
         } else // L'élément <root> n'existe pas
         {
             _doc.Root.Add(new XElement(chara,
-            new XElement("Health", PlayerHealth.Instance.currentHealth),
-            new XElement("Coins", Inventory.Instance.coinsCount),
-            new XElement("Life", PlayerHealth.Instance.currentLife),
-            new XElement("Mana", SpecialAttack.Instance.currentMana),
+            new XElement("Health", "100"),
+            new XElement("Coins", "0"),
+            new XElement("Life", "3"),
+            new XElement("Mana", "0"),
             new XElement("LevelReached", 1)
             ));
             _doc.Save(this._saveFilePath);

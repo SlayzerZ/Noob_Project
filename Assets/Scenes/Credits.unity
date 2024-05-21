@@ -763,8 +763,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000019073, y: -1167.84}
-  m_SizeDelta: {x: 436.3, y: 2335.7}
+  m_AnchoredPosition: {x: 0.000019073, y: -1425.4}
+  m_SizeDelta: {x: 436.3, y: 2850.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831345903
 MonoBehaviour:
@@ -830,11 +830,13 @@ MonoBehaviour:
 
     Kuromi
 
+    Bechamello
 
-    <Size=35>Special Thanks</Size>
 
-    Zef
-    - Tuto Unity FR
+    <Size=35>Special
+    Thanks</Size>
+
+    Zef - Tuto Unity FR
 
 
     <Size=35>License</Size>
@@ -859,10 +861,10 @@ MonoBehaviour:
     <Size=35>Ripped
     Assets</Size>
 
-    Daniel Sydney (Sonic Sprites)
+    Daniel Sydney (Sonic & Amy Sprites)
 
-    QuadFactor (Sonic Wave
-    Sprites)
+    QuadFactor (Sonic
+    Wave Sprites)
 
     Tippboyy (Item)
 
@@ -945,8 +947,21 @@ MonoBehaviour:
     Tomoya Ohtani
 
 
+    <Size=30>[Maybe If...]</Size>
 
-    Thank You For Playing !'
+    From Sonic
+    Frontiers
+
+    Takahito Eguchi
+
+    Azusa Haraguchi
+
+    Tomoya Ohtani
+
+
+
+    Thank
+    You For Playing !'
 --- !u!222 &831345904
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1325,7 +1340,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1429965558}
   - component: {fileID: 1429965560}
-  - component: {fileID: 1429965559}
   - component: {fileID: 1429965561}
   m_Layer: 5
   m_Name: Content
@@ -1357,18 +1371,6 @@ RectTransform:
   m_AnchoredPosition: {x: 218.15, y: -1425.3999}
   m_SizeDelta: {x: 436.3, y: 2850.77}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1429965559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429965557}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6a2b648c31a3814a982e05c808b63e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1429965560
 Animator:
   serializedVersion: 5
@@ -1403,7 +1405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: MainMenu
-  Menu: 0
+  Menu: 1
 --- !u!1 &1667459133
 GameObject:
   m_ObjectHideFlags: 0

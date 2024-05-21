@@ -29,8 +29,8 @@ public class LoadScene : MonoBehaviour
             {
                 SaveData.Instance.levelSaveData(LevelManager.Instance.levelR);
             }
+            SaveData.Instance.saveData();
         }
-        SaveData.Instance.saveData();
         FadeSys.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneName);

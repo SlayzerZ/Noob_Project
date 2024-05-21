@@ -21,7 +21,7 @@ public abstract class PlayerHealth : MonoBehaviour
     protected bool ground;
     protected Animator animator;
     private Animator fadeSys;
-    private Rigidbody2D rd;
+    protected Rigidbody2D rd;
 
     public PlayerHealth(int maxHealth, int currentHealth, float invicibilityTime, float invicibilityFlashDelay, int maxLife, int startLife, int currentLife, Bar healthBar, SpriteRenderer graphics, float velocity, bool ground, bool isInvincible, Animator animator)
     {
@@ -62,9 +62,9 @@ public abstract class PlayerHealth : MonoBehaviour
         healthBar.setMaxHealth(maxHealth);
         velocity = GetComponent<PlayerController>().speed;
         animator = GetComponent<Animator>();
-        animator.SetInteger("Life", currentLife-1);
         currentLife = startLife;
         lifeCount.setLife(currentLife);
+        animator.SetInteger("Life", currentLife-1);
     }
 
     // Update is called once per frame
@@ -114,7 +114,19 @@ public abstract class PlayerHealth : MonoBehaviour
         healthBar.setHealth(currentHealth);
     }
 
-    private void Die()
+    public virtual void SetLife(int life)
+    {
+        if (life > maxLife)
+        {
+            currentLife = maxLife;
+        } else
+        {
+            currentLife = life;
+        }
+        lifeCount.setLife(currentLife);
+    }
+
+    protected void Die()
     {
         animator.SetTrigger("Death");
         currentLife -= 1;
@@ -131,19 +143,7 @@ public abstract class PlayerHealth : MonoBehaviour
             GameOverManager.Instance.onPlayerDeath();
         }
     }
-
-    public void Respawn()
-    {
-        currentLife = startLife;
-        lifeCount.setLife(currentLife);
-        PlayerController.Instance.enabled = true;
-        GetComponent<BoxCollider2D>().enabled = true;
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        animator.SetInteger("Life", currentLife - 1);
-        healthBar.setMaxHealth(maxHealth);
-        currentHealth = maxHealth;
-    }
-    public IEnumerator invicibilityFlash()
+    protected IEnumerator invicibilityFlash()
     {
         while (isInvincible)
         {
@@ -154,13 +154,13 @@ public abstract class PlayerHealth : MonoBehaviour
         }
     }
 
-    public IEnumerator HandleInvicinbile()
+    protected IEnumerator HandleInvicinbile()
     {
         yield return new WaitForSeconds(invicibilityTime);
         isInvincible = false ;
     }
 
-    public IEnumerator DisableSpeed()
+    protected IEnumerator DisableSpeed()
     {
         GetComponent<PlayerController>().speed = 0;
         yield return new WaitForSeconds(1.5f);
@@ -171,7 +171,7 @@ public abstract class PlayerHealth : MonoBehaviour
         GetComponent<PlayerController>().speed = velocity;
     }
 
-    private IEnumerator ReplacePlayer()
+    protected IEnumerator ReplacePlayer()
     {
         fadeSys.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);

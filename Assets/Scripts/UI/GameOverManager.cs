@@ -24,6 +24,7 @@ public class GameOverManager : MonoBehaviour
         gameOverUi.SetActive(true);
         Inventory.Instance.RemoveCoins(LevelManager.Instance.coinsPickup);
         SaveData.Instance.resetSoftData();
+        PlayerController.Instance.movement.Movement.Disable();
     }
 
     public void retryButton()

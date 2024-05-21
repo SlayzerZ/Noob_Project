@@ -80,4 +80,17 @@ public abstract class SpecialAttack : MonoBehaviour
         }
         manaBar.setMana(currentMana);
     }
+
+    public void SetMana(float amount)
+    {
+        if (currentMana + amount > maxMana)
+        {
+            currentMana = maxMana;
+        }
+        else
+        {
+            currentMana = amount;
+        }
+        manaBar.setMana(currentMana);
+    }
 }

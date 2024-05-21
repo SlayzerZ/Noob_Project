@@ -6,6 +6,7 @@ public abstract class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 1;
     protected int currentHealth;
+    public AudioClip death;
     
 
     public EnemyHealth(int maxHealth, int currentHealth)
@@ -25,6 +26,7 @@ public abstract class EnemyHealth : MonoBehaviour
             if (currentHealth - damage <= 0)
             {
                 currentHealth = 0;
+                AudioManager.Instance.playAtPoint(death,transform.position);
             }
             else
             {
