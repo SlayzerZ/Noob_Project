@@ -15,6 +15,7 @@ public abstract class PlayerHealth : MonoBehaviour
     public LifeCount lifeCount;
     public AudioClip damageSound;
     public AudioClip deathSound;
+    public AudioClip ExtraSound;
     public SpriteRenderer graphics;
     [HideInInspector] public bool isInvincible = false;
     protected float velocity;
@@ -112,6 +113,21 @@ public abstract class PlayerHealth : MonoBehaviour
             currentHealth += heal;
         }
         healthBar.setHealth(currentHealth);
+    }
+
+    public virtual void GainLife(int life)
+    {
+        AudioManager.Instance.playAtPoint(ExtraSound,transform.position);
+        if (currentLife + life >= maxLife)
+        {
+            currentLife = maxLife;
+        }
+        else
+        {
+            currentLife += life;
+        }
+        lifeCount.setLife(currentLife);
+        animator.SetInteger("Life", currentLife + life);
     }
 
     public virtual void SetLife(int life)

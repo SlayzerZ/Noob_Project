@@ -232,6 +232,7 @@ MonoBehaviour:
   lifeCount: {fileID: 0}
   damageSound: {fileID: 8300000, guid: 7dbd03bb65c77254bbc4854b87597d97, type: 3}
   deathSound: {fileID: 8300000, guid: ba888155ea984cc44884d085ac345fb2, type: 3}
+  ExtraSound: {fileID: 8300000, guid: 74bfe82d14275a94daa4093469fbb1dc, type: 3}
   graphics: {fileID: 1517508237976542009}
   isInvincible: 0
 --- !u!114 &833042203521512382

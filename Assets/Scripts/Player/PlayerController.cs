@@ -166,4 +166,17 @@ public abstract class PlayerController : MonoBehaviour
        rd.velocity = new Vector2(x,y);
        //rd.isKinematic = true;
     }
+
+    public void DoubleSpeed(float seconds)
+    {
+        StopCoroutine(StopDoubleSpeed(seconds));
+        speed *= 2;
+        StartCoroutine(StopDoubleSpeed(seconds));
+    }
+
+    protected IEnumerator StopDoubleSpeed(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        speed /= 2;
+    }
 }

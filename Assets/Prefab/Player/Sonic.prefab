@@ -264,6 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12174ccf884e05d47969dd3152cbfb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: 
   anim: {fileID: 6550378323326076466}
   jumpForce: 1000
   jumpForce2: 800
@@ -294,10 +295,12 @@ MonoBehaviour:
   invicibilityFlashDelay: 0.2
   maxLife: 9
   startLife: 3
+  currentLife: 0
   healthBar: {fileID: 0}
   lifeCount: {fileID: 0}
   damageSound: {fileID: 8300000, guid: 7dbd03bb65c77254bbc4854b87597d97, type: 3}
   deathSound: {fileID: 8300000, guid: 6e1600d676822f34a87fdb6d62c93987, type: 3}
+  ExtraSound: {fileID: 8300000, guid: 74bfe82d14275a94daa4093469fbb1dc, type: 3}
   graphics: {fileID: 6550378323326076467}
   isInvincible: 0
 --- !u!114 &8795118311563120432

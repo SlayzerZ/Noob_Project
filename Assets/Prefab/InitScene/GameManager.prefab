@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6212889838305851647}
   - component: {fileID: 5056833738278388119}
   - component: {fileID: 3739793813577269795}
+  - component: {fileID: 1996578424213996331}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -93,3 +94,20 @@ MonoBehaviour:
   Dialogue: {fileID: 0}
   Animator: {fileID: 0}
   dialogueStart: 0
+--- !u!114 &1996578424213996331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662783295886435677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728edfba585c4904e99e945759d5b914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: {fileID: 0}
+  Dialogue: {fileID: 0}
+  Animator: {fileID: 0}
+  ButtonPrefab: {fileID: 2498640359401339026, guid: 4f596b2fa8defa748ba2bfea9a7a59d6, type: 3}
+  cellButtonParent: {fileID: 0}

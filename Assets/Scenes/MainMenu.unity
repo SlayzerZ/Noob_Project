@@ -1423,14 +1423,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2030572571}
-    - target: {fileID: 1667764192613497899, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettings
-      objectReference: {fileID: 0}
-    - target: {fileID: 1667764192613497899, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6711245454270551839, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
       propertyPath: m_Name
       value: SettingsWindow
@@ -1461,11 +1453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7346532375390602979, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 470.7454
+      value: 471
       objectReference: {fileID: 0}
     - target: {fileID: 7346532375390602979, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 301.3458
+      value: 370
       objectReference: {fileID: 0}
     - target: {fileID: 7346532375390602979, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1501,7 +1493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7346532375390602979, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6
+      value: -6.4666
       objectReference: {fileID: 0}
     - target: {fileID: 7346532375390602979, guid: 6cc8f4ea9e6a0ac42a685bbaca966d71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

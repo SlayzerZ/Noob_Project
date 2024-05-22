@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f8649a086f885f408adb2c8965a5344
+guid: 9d032174fdcf618419c7f93a69815a51
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_0
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 1512
-        width: 252
-        height: 223
+        x: 23
+        y: 153
+        width: 256
+        height: 257
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb34cdae378ef364e8cc5eca98110c92
-      internalID: 1622420688
+      spriteID: bff7f3bcfbae6b244bbbe6f4cdb6217c
+      internalID: -106056584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_1
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 1618
-        width: 252
-        height: 117
+        x: 304
+        y: 161
+        width: 255
+        height: 254
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 642f0f304898e894697280b7dc6916ef
-      internalID: -2077698359
+      spriteID: ebf27524a3a202d4b83f6369a440849d
+      internalID: -1805030671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_2
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_2
       rect:
         serializedVersion: 2
-        x: 7
-        y: 1512
-        width: 252
-        height: 103
+        x: 865
+        y: 156
+        width: 255
+        height: 259
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 353a3108f01801a4894de3cbfe2c1243
-      internalID: -794075601
+      spriteID: 244964fce268e9b49ad6c8b983ac9ae8
+      internalID: -2016011439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_3
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_3
       rect:
         serializedVersion: 2
-        x: 7
-        y: 1332
-        width: 252
-        height: 178
+        x: 1128
+        y: 157
+        width: 255
+        height: 259
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a729904b99e3f341a16b2a8004471fd
-      internalID: 1847881530
+      spriteID: 581e7b405af32db4a9b8fd5fb2c58f32
+      internalID: -122665059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_4
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_4
       rect:
         serializedVersion: 2
-        x: 25
-        y: 10
-        width: 171
-        height: 101
+        x: 584
+        y: 296
+        width: 255
+        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f22949229ae77cd41869a5295bc6bdd6
-      internalID: 516207442
+      spriteID: 973232c9133279f40b55a4153b614ebe
+      internalID: -1640923881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_5
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_5
       rect:
         serializedVersion: 2
-        x: 205
-        y: 9
-        width: 164
-        height: 102
+        x: 864
+        y: 25
+        width: 257
+        height: 127
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7352c8c6846e56d4381742b62800ce8a
-      internalID: 589879382
+      spriteID: bacaa04636bf9fa48a8c2886709841f9
+      internalID: 1922819043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-ice-mountain-zone_6
+      name: Game Boy Advance - Sonic Advance - Egg Rocket Zone_6
       rect:
         serializedVersion: 2
-        x: 7
-        y: 397
-        width: 188
-        height: 136
+        x: 1128
+        y: 24
+        width: 256
+        height: 127
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,71 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0358b327f2c60774f93f4416172e0c53
-      internalID: 1587427117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg-ice-mountain-zone_7
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 397
-        width: 189
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5749a6f483e4f474e8d9b771d6509b8b
-      internalID: 1978043282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg-ice-mountain-zone_8
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 422
-        width: 190
-        height: 109
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ab436e510be0b48acec63c4a701789
-      internalID: -111462830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg-ice-mountain-zone_9
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 167
-        width: 251
-        height: 220
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64fdfd6fd133a444bb9ad9f49301c334
-      internalID: 775898085
+      spriteID: a9c4dd68160ef1341a41e7f3c2bb9740
+      internalID: 1407918482
       vertices: []
       indices: 
       edges: []
@@ -317,16 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bg-ice-mountain-zone_0: 1622420688
-      bg-ice-mountain-zone_1: -2077698359
-      bg-ice-mountain-zone_2: -794075601
-      bg-ice-mountain-zone_3: 1847881530
-      bg-ice-mountain-zone_4: 516207442
-      bg-ice-mountain-zone_5: 589879382
-      bg-ice-mountain-zone_6: 1587427117
-      bg-ice-mountain-zone_7: 1978043282
-      bg-ice-mountain-zone_8: -111462830
-      bg-ice-mountain-zone_9: 775898085
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_0: -106056584
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_1: -1805030671
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_2: -2016011439
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_3: -122665059
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_4: -1640923881
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_5: 1922819043
+      Game Boy Advance - Sonic Advance - Egg Rocket Zone_6: 1407918482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

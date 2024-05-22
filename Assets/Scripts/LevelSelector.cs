@@ -39,7 +39,7 @@ public class LevelSelector : MonoBehaviour
         }
         for (int i = 0; i < levelbuttons2.Length; i++)
         {
-            if (i > levelReached2)
+            if (i+1 > levelReached2)
             {
                 levelbuttons2[i].interactable = false;
             }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fead9ba5c5ff6b044ac9d761f26bbefa, type: 3}
+  m_Name: Mana
+  m_EditorClassIdentifier: 
+  id: 3
+  name: Mana
+  description: Restores a few % of Mana
+  icon: {fileID: -1863519092, guid: d746a247cd4dac14597beee5614e6fc1, type: 3}
+  hpGiven: 0
+  speedGiven: 0
+  lifeGiven: 0
+  manaGiven: 3.5
+  speedDuration: 0
+  price: 5

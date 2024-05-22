@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad513a78ced709846a8aadad201213dc
+guid: c511b9add8d223141b480cdfcf12a9c6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg-angel-island-zone_0
+      name: mPia83NLsiEou2FPTaCHo-transformed_0
       rect:
         serializedVersion: 2
-        x: 832
-        y: 944
-        width: 249
-        height: 152
+        x: 6
+        y: 166
+        width: 53
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf22a4420661a994b8c6cd7c563cb9ad
-      internalID: 539576878
+      spriteID: f3fdd88c3daac434eb92a1788f412f49
+      internalID: 1658993726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg-angel-island-zone_1
+      name: mPia83NLsiEou2FPTaCHo-transformed_1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 874
-        width: 93
-        height: 75
+        x: 5
+        y: 68
+        width: 23
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,29 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcdd6d0bb98a9474eb412f0f81a54af4
-      internalID: 309161642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg-angel-island-zone_2
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 872
-        width: 93
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 293e4db12e66e5a44869fc526f1cdf54
-      internalID: 2082836362
+      spriteID: 730aa37dbcb100747bd8c2204ae3d3d0
+      internalID: -657699601
       vertices: []
       indices: 
       edges: []
@@ -170,9 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bg-angel-island-zone_0: 539576878
-      bg-angel-island-zone_1: 309161642
-      bg-angel-island-zone_2: 2082836362
+      mPia83NLsiEou2FPTaCHo-transformed_0: 1658993726
+      mPia83NLsiEou2FPTaCHo-transformed_1: -657699601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
