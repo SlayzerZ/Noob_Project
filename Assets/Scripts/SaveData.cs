@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SaveData : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class SaveData : MonoBehaviour
         }
         Instance = this;
     }
+
     public void CreateDefaultSaveFile(string chara)
     {
 
@@ -76,16 +78,22 @@ public class SaveData : MonoBehaviour
 
     public void loadData()
     {
-       // PlayerHealth.Instance.currentHealth = int.Parse(XmlReader(PlayerController.Instance.Name, "Health"));
+        // PlayerHealth.Instance.currentHealth = int.Parse(XmlReader(PlayerController.Instance.Name, "Health"));
         Inventory.Instance.coinsCount = int.Parse(XmlReader(PlayerController.Instance.Name, "Coins"));
         PlayerHealth.Instance.SetLife(int.Parse(XmlReader(PlayerController.Instance.Name, "Life")));
         SpecialAttack.Instance.SetMana(float.Parse(XmlReader(PlayerController.Instance.Name, "Mana")));
         Inventory.Instance.Updateui();
-       // PlayerHealth.Instance.healthBar.setHealth(PlayerHealth.Instance.currentHealth);
+        // PlayerHealth.Instance.healthBar.setHealth(PlayerHealth.Instance.currentHealth);
+        /*if (GameObject.FindGameObjectWithTag("TextUI"))
+        {
+            Text a = GameObject.FindGameObjectWithTag("TextUI").GetComponent<Text>();
+            a.text = "SaveFile : " + XmlReader(PlayerController.Instance.Name, "Life") + " Current : " + PlayerHealth.Instance.currentLife.ToString();
+        }*/
     }
 
     public string XmlReader(string chara,string element)//Lecteur d'element xml
     {
+        
         XElement XmlRoot = XDocument.Load(_saveFilePath).Element("Root").Element(chara);
         if (XmlRoot != null)//<root/> existe ?
         {

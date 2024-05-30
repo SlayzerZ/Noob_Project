@@ -21,4 +21,4 @@ MonoBehaviour:
   lifeGiven: 0
   manaGiven: 0
   speedDuration: 20
-  price: 2
+  price: 10

@@ -6,24 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/UI/MainMenu.unity
     guid: 580a3dd4a6f44914d8e2b4c9641925a4
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
+    path: Assets/Scenes/UI/LevelSelect.unity
     guid: 51f02ca7ccbe7c0408064cf99ba36249
   - enabled: 1
-    path: Assets/Scenes/Tuto_Sonic.unity
+    path: Assets/Scenes/Sonic/Tuto_Sonic.unity
     guid: b66214893c6355c40ad892268581d16b
   - enabled: 1
-    path: Assets/Scenes/Level01_Sonic.unity
+    path: Assets/Scenes/Sonic/Level01_Sonic.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level02_Sonic.unity
+    path: Assets/Scenes/Sonic/Level02_Sonic.unity
     guid: f982442cf3ae291468eee43003482ef9
   - enabled: 1
-    path: Assets/Scenes/Level01_Amy.unity
+    path: Assets/Scenes/Sonic/Level03_Sonic.unity
+    guid: 7191cdb222735b74d9ae983aa9a95cc4
+  - enabled: 1
+    path: Assets/Scenes/Amy/Level01_Amy.unity
     guid: 9b83fede8933052478478f645fa70039
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
+    path: Assets/Scenes/Amy/Level02_Amy.unity
+    guid: 81a5e0ee77fc19b4da7a062fee3c5005
+  - enabled: 1
+    path: Assets/Scenes/UI/Credits.unity
     guid: cf964f2b9935c0148a981608bce63ec9
   m_configObjects: {}

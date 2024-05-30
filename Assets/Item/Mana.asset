@@ -19,6 +19,6 @@ MonoBehaviour:
   hpGiven: 0
   speedGiven: 0
   lifeGiven: 0
-  manaGiven: 3.5
+  manaGiven: 1.5
   speedDuration: 0
-  price: 5
+  price: 3

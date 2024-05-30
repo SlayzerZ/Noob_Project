@@ -200,7 +200,7 @@ MonoBehaviour:
   Name: Amy
   anim: {fileID: 0}
   jumpForce: 500
-  jumpForce2: 900
+  jumpForce2: 750
   speed: 400
   laserLength: 0.1
   bCol2d: {fileID: 0}

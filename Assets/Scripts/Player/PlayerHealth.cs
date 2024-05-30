@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 
 public abstract class PlayerHealth : MonoBehaviour
@@ -66,6 +67,9 @@ public abstract class PlayerHealth : MonoBehaviour
         currentLife = startLife;
         lifeCount.setLife(currentLife);
         animator.SetInteger("Life", currentLife-1);
+        {
+            SaveData.Instance.loadData();
+        }
     }
 
     // Update is called once per frame

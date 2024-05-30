@@ -590,7 +590,7 @@ TextureImporter:
         serializedVersion: 2
         x: 561
         y: 927
-        width: 19
+        width: 26
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -601,27 +601,6 @@ TextureImporter:
       bones: []
       spriteID: 64de237cfaa2cbf468655a9f58690b3f
       internalID: 584290218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_23
-      rect:
-        serializedVersion: 2
-        x: 579
-        y: 944
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f73f7db4366b9546b5e2e6d9d73334a
-      internalID: 1829196196
       vertices: []
       indices: 
       edges: []
@@ -6780,111 +6759,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_328
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 483
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ac1d29cc78d76843a95a0976755e4be
-      internalID: -720635256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_329
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 483
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b812f6acad8b8924c9d4c9f6f5bf555d
-      internalID: 707799606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_330
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 482
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ca690dd011e9d4dbf36a59813a0a3a
-      internalID: -2121903505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_331
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 483
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6906fe2e2cf8d44e8dcaac45ba2efcd
-      internalID: 2093236961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_332
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 482
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b3945eaa7d86ec4fb8d7bd53abeedeb
-      internalID: -506579488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_333
       rect:
         serializedVersion: 2
@@ -7164,7 +7038,7 @@ TextureImporter:
         x: 450
         y: 446
         width: 28
-        height: 36
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8712,139 +8586,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_420
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 331
-        width: 21
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 411a0b78b637b234fb32d5bffa9f9e2e
-      internalID: -1808579517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_421
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 336
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 166af194251466a4f8bc7a2a8a5e2d0a
-      internalID: -646604892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_422
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 333
-        width: 23
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b20e4f7748fc26b4bbd1ba557e37f5c9
-      internalID: -714797341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_423
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 326
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6150cca16dc38a8478d0aa2e3ab3b4eb
-      internalID: -255035200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_424
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 345
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbbe058e1ee137e419a3fb6f14032f9e
-      internalID: 1796108025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_425
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 340
-        width: 12
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04b5a7aec6d476843acb119a593c8807
-      internalID: 1493628422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_426
       rect:
         serializedVersion: 2
-        x: 237
+        x: 225
         y: 299
-        width: 26
-        height: 37
+        width: 38
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8859,34 +8607,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_427
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 325
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 228e206bccae95441b0acb1cdb8060dd
-      internalID: 1931761214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_428
       rect:
         serializedVersion: 2
-        x: 278
+        x: 265
         y: 299
-        width: 24
-        height: 37
+        width: 37
+        height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8904,10 +8631,10 @@ TextureImporter:
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_429
       rect:
         serializedVersion: 2
-        x: 314
+        x: 304
         y: 299
-        width: 25
-        height: 36
+        width: 35
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8925,10 +8652,10 @@ TextureImporter:
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_430
       rect:
         serializedVersion: 2
-        x: 350
+        x: 341
         y: 299
-        width: 25
-        height: 36
+        width: 34
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8949,7 +8676,7 @@ TextureImporter:
         x: 376
         y: 299
         width: 33
-        height: 46
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8970,7 +8697,7 @@ TextureImporter:
         x: 411
         y: 299
         width: 35
-        height: 40
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8980,27 +8707,6 @@ TextureImporter:
       bones: []
       spriteID: dcb64d1c214c7d4489c6bc4de331be2e
       internalID: 1353792709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_433
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 334
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b51b9d1a70f3724085578591799e7d2
-      internalID: -964469628
       vertices: []
       indices: 
       edges: []
@@ -9159,7 +8865,7 @@ TextureImporter:
         x: 448
         y: 299
         width: 35
-        height: 33
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9174,34 +8880,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_442
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 329
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cc8e9b122dfa4f4e85c2a8eb67eb4fb
-      internalID: 1658249566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_443
       rect:
         serializedVersion: 2
         x: 485
         y: 299
         width: 34
-        height: 31
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9211,27 +8896,6 @@ TextureImporter:
       bones: []
       spriteID: d3370b2c2be81634fb9a8d8669e55715
       internalID: 1065762374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_444
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 326
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9d7961cda6e281439fd2cfbe7af1c45
-      internalID: -2118660715
       vertices: []
       indices: 
       edges: []
@@ -9410,7 +9074,7 @@ TextureImporter:
         serializedVersion: 2
         x: 758
         y: 299
-        width: 28
+        width: 32
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -9421,27 +9085,6 @@ TextureImporter:
       bones: []
       spriteID: 66ad3685eafa4e24aa28f6e6fd587ecb
       internalID: -1122179587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_454
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 322
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3c75c2be855f074789da6a444dae72c
-      internalID: 26700408
       vertices: []
       indices: 
       edges: []
@@ -9468,117 +9111,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_456
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 323
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 317f8bf4252e9aa41b9cea0e9b7b5ab1
-      internalID: -1615332567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_457
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 316
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd888eac26b701f429129a62a7deaa97
-      internalID: 357917365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_458
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 312
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73e4e2948a2ac854b99fa2ca9891c13b
-      internalID: 170513509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_459
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 316
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1aad64055bfa18b43acf312b319abae6
-      internalID: 1158912076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_460
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 311
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7196c5460027d6499ce63609aae59fd
-      internalID: 1833370475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_461
       rect:
         serializedVersion: 2
         x: 2
         y: 259
-        width: 29
+        width: 31
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -9589,27 +9127,6 @@ TextureImporter:
       bones: []
       spriteID: 34417c95a96055349b93169442f5e45b
       internalID: -166972220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_462
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 285
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1441559691905924b8429ea20bcf275b
-      internalID: 1888267059
       vertices: []
       indices: 
       edges: []
@@ -9809,7 +9326,7 @@ TextureImporter:
         serializedVersion: 2
         x: 254
         y: 260
-        width: 23
+        width: 35
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -9825,33 +9342,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_473
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 282
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62299274122985841a7159baa2e50042
-      internalID: -811426544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_474
       rect:
         serializedVersion: 2
         x: 290
         y: 260
-        width: 31
+        width: 34
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -9862,27 +9358,6 @@ TextureImporter:
       bones: []
       spriteID: db75922054b76b2429af5339d5b1c6dc
       internalID: -883056517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_475
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 283
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7747407a79ee1354eb303ad7b0cea139
-      internalID: -788123743
       vertices: []
       indices: 
       edges: []
@@ -9996,9 +9471,9 @@ TextureImporter:
       name: Game Boy Advance - Sonic Advance 2 - Amy Rose_481
       rect:
         serializedVersion: 2
-        x: 447
+        x: 444
         y: 260
-        width: 28
+        width: 31
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -10240,48 +9715,6 @@ TextureImporter:
       bones: []
       spriteID: a427a0e0f78a52744a902682b221e83c
       internalID: 346642226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_493
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 275
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4937314a6ceac684a8cd2c54f09b037a
-      internalID: -1053988961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Sonic Advance 2 - Amy Rose_494
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 276
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc6260472a33ea14682bebc3477967d9
-      internalID: -331601215
       vertices: []
       indices: 
       edges: []

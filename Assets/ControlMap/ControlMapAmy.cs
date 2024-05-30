@@ -60,8 +60,30 @@ public partial class @ControlMapAmy: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""a44e0cd8-2975-4b51-b158-0267e2ff0ac8"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""4e075495-2176-468b-bd0e-9504031fe632"",
                     ""path"": ""<Keyboard>/semicolon"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Special"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e0d0f54f-4e34-4dca-8a35-b2bb2de39275"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -126,34 +148,6 @@ public partial class @ControlMapAmy: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""SuperSonic"",
-            ""id"": ""190fcac4-ae4a-487e-bc0b-b4e01c9bc753"",
-            ""actions"": [
-                {
-                    ""name"": ""Special"",
-                    ""type"": ""Button"",
-                    ""id"": ""99fd9091-d202-4b9e-85db-f33aecc44fda"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""31e9cc75-50f6-4add-ae80-e0cf4a5b7836"",
-                    ""path"": ""<Keyboard>/semicolon"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Special"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": []
@@ -168,9 +162,6 @@ public partial class @ControlMapAmy: IInputActionCollection2, IDisposable
         // Cutscene
         m_Cutscene = asset.FindActionMap("Cutscene", throwIfNotFound: true);
         m_Cutscene_Newaction = m_Cutscene.FindAction("New action", throwIfNotFound: true);
-        // SuperSonic
-        m_SuperSonic = asset.FindActionMap("SuperSonic", throwIfNotFound: true);
-        m_SuperSonic_Special = m_SuperSonic.FindAction("Special", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -374,52 +365,6 @@ public partial class @ControlMapAmy: IInputActionCollection2, IDisposable
         }
     }
     public CutsceneActions @Cutscene => new CutsceneActions(this);
-
-    // SuperSonic
-    private readonly InputActionMap m_SuperSonic;
-    private List<ISuperSonicActions> m_SuperSonicActionsCallbackInterfaces = new List<ISuperSonicActions>();
-    private readonly InputAction m_SuperSonic_Special;
-    public struct SuperSonicActions
-    {
-        private @ControlMapAmy m_Wrapper;
-        public SuperSonicActions(@ControlMapAmy wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Special => m_Wrapper.m_SuperSonic_Special;
-        public InputActionMap Get() { return m_Wrapper.m_SuperSonic; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(SuperSonicActions set) { return set.Get(); }
-        public void AddCallbacks(ISuperSonicActions instance)
-        {
-            if (instance == null || m_Wrapper.m_SuperSonicActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_SuperSonicActionsCallbackInterfaces.Add(instance);
-            @Special.started += instance.OnSpecial;
-            @Special.performed += instance.OnSpecial;
-            @Special.canceled += instance.OnSpecial;
-        }
-
-        private void UnregisterCallbacks(ISuperSonicActions instance)
-        {
-            @Special.started -= instance.OnSpecial;
-            @Special.performed -= instance.OnSpecial;
-            @Special.canceled -= instance.OnSpecial;
-        }
-
-        public void RemoveCallbacks(ISuperSonicActions instance)
-        {
-            if (m_Wrapper.m_SuperSonicActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(ISuperSonicActions instance)
-        {
-            foreach (var item in m_Wrapper.m_SuperSonicActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_SuperSonicActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public SuperSonicActions @SuperSonic => new SuperSonicActions(this);
     public interface IPlatformActions
     {
         void OnJump(InputAction.CallbackContext context);
@@ -432,9 +377,5 @@ public partial class @ControlMapAmy: IInputActionCollection2, IDisposable
     public interface ICutsceneActions
     {
         void OnNewaction(InputAction.CallbackContext context);
-    }
-    public interface ISuperSonicActions
-    {
-        void OnSpecial(InputAction.CallbackContext context);
     }
 }
