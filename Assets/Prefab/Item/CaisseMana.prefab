@@ -10,12 +10,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 355536597008603079, guid: 6cf1b6387c4ac5a4ebc43bcf30f5ad6d, type: 3}
       propertyPath: m_Name
-      value: CaisseMana Variant
+      value: CaisseMana
       objectReference: {fileID: 0}
     - target: {fileID: 1258813322570388928, guid: 6cf1b6387c4ac5a4ebc43bcf30f5ad6d, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2022424473, guid: dc75d79a79302e24198855e68eb9c409, type: 3}
+    - target: {fileID: 3770120256152954929, guid: 6cf1b6387c4ac5a4ebc43bcf30f5ad6d, type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7921696420443070686, guid: 6cf1b6387c4ac5a4ebc43bcf30f5ad6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 432.12433
